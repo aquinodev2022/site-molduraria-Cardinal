@@ -1,0 +1,89 @@
+
+
+
+  .navbar-nav .nav-link {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  /* Estilo para o carrossel */
+  .carousel-item img {
+    height: 500px;
+    object-fit: cover;
+  }
+
+  /* Estilo para a seção de serviços */
+  .services-section {
+    padding: 50px 0;
+    background-color: #d0d2d4;
+  }
+  
+  .services-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .services-section .card {
+    border: none;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Adiciona altura máxima para os cards */
+  }
+  
+  .services-section .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
+  .services-section .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .services-section .card-body {
+    min-height: 180px; /* Define a altura mínima do conteúdo dos cards */
+  }
+  
+  .services-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .services-section .card-text {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  
+  /* Estilo para a seção de localização */
+  .location-section {
+    padding: 50px 0;
+    background-color: #e9ecef;
+  }
+  .location-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo do rodapé */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+
+  footer p {
+    margin: 0px 0px 20px 0;
+  }
+
+  footer a {
+    color: #fff;
+    margin: 0 10px 0 10px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  
