@@ -2,144 +2,164 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Molduraria Cardinal</title>
-    <link rel="shortcut icon" href="assets/logoSite.svg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Molduraria Cardinal</title>
+  <link rel="shortcut icon" href="assets/logoSite.svg" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="./style/reset.css">
 </head>
 
 <body>
-
-    <!-- Barra de Navegação -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container d-flex justify-content-between align-items-center">
-            <ul class="navbar-nav me-auto">
-                <li class="nav-item me-5">
-                    <a class="nav-link" href="index.html">Início</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link" href="#">Loja</a>
-                </li>
-            </ul>
-
-            <img src="assets/logoSite.svg" class="navbar-brand" alt="Logo" style="height: 100px; margin-left: 60px;"
-                class="d-block mx-5">
-
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item me-5">
-                    <a class="nav-link" href="#">Categoria</a>
-                </li>
-                <li class="nav-item me-3">
-                    <a class="nav-link" href="#">Vitrine</a>
-                </li>
-            </ul>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html">
+        <div class="d-flex align-items-center" style="margin-left: 50px;">
+          <img src="assets/logoSite.svg" alt="Logo" style="height: 100px; margin-right: -50px;" />
+          <img src="assets/nomeMadureiraCardinal.png" alt="Nome Madureira Cardinal" />
         </div>
-    </nav>
 
-    <!-- Carrossel -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="assets/imagemfundoServicos.svg" class="d-block w-100" alt="Quadro 1">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/imagemFundoServicos.png" class="d-block w-100" alt="Quadro 2">
-            </div>
-            <div class="carousel-item">
-                <img src="assets/imagemFundoServicos.png" class="d-block w-100" alt="Quadro 3">
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Próximo</span>
-        </button>
+      </a>
+      <ul class="navbar-nav ms-auto me-5">
+        <li class="nav-item me-4">
+          <a class="nav-link" href="index.html">Início</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link" href="#">Loja</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link" href="#">Categoria</a>
+        </li>
+        <li class="nav-item me-4">
+          <a class="nav-link" href="html/vitrine.html">Vitrine</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Botão do Whatsaap -->
+  <a href="https://wa.me/558171181482" target="_blank" class="whatsapp-button">
+    <img src="assets/iconeWhatsaap.png" alt="WhatsApp" class="whatsapp-icon" />
+    <img src="assets/linha.png" class="line-icon" />
+    <span class="whatsapp-text">Consultoria grátis</span>
+  </a>
+
+  <!-- Carrossel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
 
-    <!-- Seção de Serviços -->
-    <section class="services-section text-center">
-        <div class="container">
-            <h2>Serviços</h2>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="assets/imagemFundoServicos.png" style="border-radius: 50%; width: 200px; " class="card-img-top" alt="Serviço 1">
-                        <div class="card-body">
-                            <h3 style="color: aquamarine;">blablablablablabla</h3>
-                            <p class="card-text">blablablablablabla</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="service2.jpg" class="card-img-top" alt="Serviço 2">
-                        <div class="card-body">
-                            <h3>blablablablablabla</h3>
-                            <p class="card-text">blablablablablabla</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card">
-                        <img src="service3.jpg" class="card-img-top" alt="Serviço 3">
-                        <div class="card-body">
-                            <h3>blablablablablabla</h3>
-                            <p class="card-text">blablablablablabla</p>
-                        </div>
-                    </div>
-                </div>
-            
+    <!-- Imagens do carrosel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/imagemfundoServicos.svg" class="d-block w-100" alt="Quadro 1" />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/imagemfundoServicos.svg" class="d-block w-100" alt="Quadro 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="assets/imagemfundoServicos.svg" class="d-block w-100" alt="Quadro 3" />
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <!-- Serviços -->
+  <section class="services-section text-center">
+    <div class="container">
+      <h2>Serviços</h2>
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/imagemfundoServicos.svg" style="border-radius: 50%; width: 200px"
+              class="card-img-top mx-auto d-block" alt="Serviço 1" />
+            <div class="card-body">
+              <h3 style="color: aquamarine">blablablablablabla</h3>
+              <p class="card-text">blablablablablabla</p>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Seção de Localização -->
-    <section class="location-section text-center">
-        <div class="container">
-            <h2>Localização </h2>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.592232270024!2d-34.9405587!3d-8.040906800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19dd3ee40af5%3A0x31ccdbc34b045af6!2sMolduraria%20Cardinal!5e0!3m2!1spt-BR!2sbr!4v1725888021304!5m2!1spt-BR!2sbr"
-                width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/imagemfundoServicos.svg" class="card-img-top mx-auto d-block" alt="Serviço 2"
+              style="border-radius: 50%; width: 200px" />
+            <div class="card-body">
+              <h3>blablablablablabla</h3>
+              <p class="card-text">blablablablablabla</p>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Rodapé -->
-    <footer class="text-center">
-        <div class="container">
-            <p>Maturreira Cardinal</p>
-
-            <a href="https://wa.me/c/558171181482" target="_blank">Whatsapp</a> |
-            <a href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr" target="_blank">Instagram</a> |
-            <a href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web"
-                target="_blank">Facebook</a> |
-            <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank">Política de Privacidade</a>
-
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/imagemfundoServicos.svg" class="card-img-top mx-auto d-block" alt="Serviço 2"
+              style="border-radius: 50%; width: 200px" />
+            <div class="card-body">
+              <h3>blablablablablabla</h3>
+              <p class="card-text">blablablablablabla</p>
+            </div>
+          </div>
         </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="col-md-3">
+          <div class="card">
+            <img src="assets/imagemfundoServicos.svg" class="card-img-top mx-auto d-block" alt="Serviço 3"
+              style="border-radius: 50%; width: 200px" />
+            <div class="card-body">
+              <h3>blablablablablabla</h3>
+              <p class="card-text">blablablablablabla</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Localização -->
+  <section class="location-section text-center">
+    <div class="container">
+      <h2>Localização</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.592232270024!2d-34.9405587!3d-8.040906800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19dd3ee40af5%3A0x31ccdbc34b045af6!2sMolduraria%20Cardinal!5e0!3m2!1spt-BR!2sbr!4v1725888021304!5m2!1spt-BR!2sbr"
+        width="100%" height="600" style="border: 0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div class="container">
+      <p>Maturreira Cardinal</p>
+
+      <a href="https://wa.me/c/558171181482" target="_blank">Whatsapp</a>
+      |
+      <a href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr" target="_blank">Instagram</a>
+      |
+      <a href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web"
+        target="_blank">Facebook</a>
+      |
+      <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank">Política de Privacidade</a>
+    </div>
+  </footer>
+
 </body>
 
 </html>

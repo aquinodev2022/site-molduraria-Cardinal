@@ -1,0 +1,114 @@
+/* Menu de navegação */
+.navbar-nav .nav-link {
+  font-weight: bold;
+  font-size: 20px;
+  color: #333;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 40px; 
+  right: 50px; 
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  background-color: #25d366; 
+  border-radius: 50px;
+  padding: 10px 20px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  text-decoration: none;
+}
+
+.whatsapp-icon {
+  width: 40px;
+  height: auto;
+}
+
+.line-icon {
+  width: 2px; 
+  height: 40px; 
+  margin: 0 10px; 
+  background-color: #fff; 
+}
+
+.whatsapp-text {
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+
+
+/* Carrossel */
+/* .carousel-item img {
+  height: 500px;
+  object-fit: cover;
+} */
+
+/* Serviços */
+.services-section {
+  padding: 40px 0;
+  background-color: #d0d2d4;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.services-section .card {
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.services-section .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  margin-top: 20px;
+}
+
+.services-section .card-body {
+  min-height: 180px;
+}
+
+.services-section .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.services-section .card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Localização */
+.location-section {
+  padding: 50px 0;
+  background-color: #e9ecef;
+}
+
+.location-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0px 0px 20px 0;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px 0 10px;
+  font-weight: bold;
+  text-decoration: none;
+}
