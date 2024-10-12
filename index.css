@@ -1,9 +1,24 @@
+
 /* Menu de navegação */
 .navbar-nav .nav-link {
   font-weight: bold;
   font-size: 20px;
   color: #333;
 }
+
+hr {
+  height: 1px; 
+  background-color: black !important; 
+  opacity: 1; 
+  margin: 20px 0; 
+}
+
+.custom-hr {
+  border: 1px solid black;
+  width: 25%; 
+}
+
+
 
 .whatsapp-button {
   position: fixed;
@@ -47,40 +62,9 @@
 } */
 
 /* Serviços */
-.services-section {
-  padding: 40px 0;
-  background-color: #d0d2d4;
-}
 
-.services-section h2 {
-  font-size: 2.5rem;
+section h2 {
   font-weight: bold;
-  margin-bottom: 35px;
-}
-
-.services-section .card {
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.services-section .card-img-top {
-  height: 200px;
-  object-fit: cover;
-  margin-top: 20px;
-}
-
-.services-section .card-body {
-  min-height: 180px;
-}
-
-.services-section .card-title {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.services-section .card-text {
-  font-size: 1rem;
-  color: #555;
 }
 
 /* Localização */
