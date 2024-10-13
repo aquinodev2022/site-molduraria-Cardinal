@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="assets/logoSite.jpg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <style>
+        .navbar-nav .nav-link {
+          position: relative;
+          color: #000;
+        }
+  
+        .navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 50%; /* Move para o meio do elemento pai */
+    transform: translateX(-50%); /* Centraliza perfeitamente */
+    width: 40px;
+    height: 8px;
+    background-color: #F00E0E;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="margin-top: 65px">
+        <div class="container d-flex align-items-center">
+          <div class="d-flex align-items-center">
+            <a href="https://www.instagram.com/moldurariacardinal" target="_blank">
+              <img src="assets/instagramIcone.jpg" alt="Instagram" style="height: 40px; margin-right: 35px" />
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100091002034014" target="_blank">
+              <img src="assets/facebookIcone.jpg" alt="Facebook" style="height: 40px; margin-right: 35px" />
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=558171181482" target="_blank">
+              <img src="assets/whatsappIcone.jpg" alt="Whatsapp" style="height: 40px; margin-right: 35px" />
+            </a>
+          </div>
+        </div>
+    </nav>
+
+    <div class="d-flex justify-content-center align-items-center" style="margin: 30px 0; position: relative">
+        <hr class="custom-hr" style="width: 31%; margin-right: 160px" />
+        <a href="index.html" style="position: absolute">
+          <img src="assets/logoSiteSemFundo.png" alt="Logo" style="height: 150px; margin-bottom: 50px" />
+        </a>
+        <hr class="custom-hr" style="width: 31%; margin-right: 10px" />
+    </div>
+
+    <nav class="navbar navbar-expand-lg" style="margin: 50px 0 15px 0">
+        <div class="container d-flex justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../index.html">Início</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./catalogo.html">Catálogo</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./pintores.html">Pintores</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="./vitrine.html">Vitrine</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <p>dsdsdsds</p>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Seleciona todos os links da navbar
+      const links = document.querySelectorAll('.navbar-nav .nav-link');
+
+      // Obtém o caminho atual da URL (última parte do caminho)
+      const currentPath = window.location.pathname.split('/').pop();
+
+      // Percorre os links e adiciona a classe 'active' ao correspondente
+      links.forEach(link => {
+        const href = link.getAttribute('href').split('/').pop();
+        
+        if (currentPath === href) {
+          link.classList.add('active');
+        }
+      });
+
+      // Remove rolagem anterior logo ao carregar a página
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual"; // Impede que o navegador restaure a posição de rolagem
+      }
+      window.scrollTo(0, 0); // Garante que o topo da página seja exibido
+    </script>
+</body>
+</html>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moldureria Cardinal</title>
+    <title>Molduraria Cardinal</title>
     <link rel="shortcut icon" href="assets/logoSite.jpg" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
@@ -13,135 +13,151 @@
     <link rel="stylesheet" href="./style/reset.css" />
 
     <style>
-     #carouselExampleIndicators {
-  width: 100%; 
-  max-width: 1320px;
-  margin: 0 auto;
-}
+      .navbar-nav .nav-link {
+        position: relative;
+        color: #000;
+      }
 
-.carousel-inner {
-  overflow: hidden; 
-  height: 440px;
-}
+      .navbar-nav .nav-link.active::after {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        left: 50%; 
+        transform: translateX(-50%);
+        width: 40px;
+        height: 8px;
+        background-color: #f00e0e;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
 
+      #carouselExampleIndicators {
+        width: 100%;
+        max-width: 1320px;
+        margin: 0 auto;
+      }
 
-.carousel-inner img {
-  width: 100%;
-  height: auto; /* Use auto para manter a proporção */
-  max-height: 450px; /* Limite a altura da imagem */
-  object-fit: cover; /* Use cover para preencher o contêiner */
-}
+      .carousel-inner {
+        overflow: hidden;
+        height: 440px;
+      }
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #aeaeae; 
-  border-radius: 50%; 
-  width: 50px; 
-  height: 50px;
-}
+      .carousel-inner img {
+        width: 100%;
+        height: auto; 
+        max-height: 450px;
+        object-fit: cover; 
+      }
 
-.carousel-control-prev-icon {
-  margin-right: 100px;
-}
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: #aeaeae;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+      }
 
-.carousel-control-next-icon {
-  margin-left: 100px;
-}
+      .carousel-control-prev-icon {
+        margin-right: 100px;
+      }
 
-
-
+      .carousel-control-next-icon {
+        margin-left: 100px;
+      }
     </style>
   </head>
 
+  <body id="inicioPagina">
+    <nav class="navbar navbar-expand-lg" style="margin-top: 65px">
+      <div class="container d-flex align-items-center">
+        <!-- Ícones de redes sociais à esquerda -->
+        <div class="d-flex align-items-center">
+          <a
+            href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr"
+            target="_blank"
+          >
+            <img
+              src="assets/instagramIcone.jpg"
+              alt="Instagram"
+              style="height: 40px; margin-right: 35px"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web"
+            target="_blank"
+          >
+            <img
+              src="assets/facebookIcone.jpg"
+              alt="Facebook"
+              style="height: 40px; margin-right: 35px"
+            />
+          </a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=558171181482&text&type=phone_number&app_absent=0"
+            target="_blank"
+          >
+            <img
+              src="assets/whatsappIcone.jpg"
+              alt="Whatsapp"
+              style="height: 40px; margin-right: 35px"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
 
+    <!-- Alinhamento central com logo e linhas horizontais -->
+    <div
+      class="d-flex justify-content-center align-items-center"
+      style="margin: 30px 0; position: relative"
+    >
+      <hr class="custom-hr" style="width: 31%; margin-right: 160px" />
 
-
-
-  <body>
-    <nav class="navbar navbar-expand-lg" style="margin-top: 65px" id="inicioPagina">
-  <div class="container d-flex align-items-center">
-    <!-- Ícones de redes sociais à esquerda -->
-    <div class="d-flex align-items-center" style="margin-left: 20px">
-      <a href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr" target="_blank">
-        <img src="assets/instagramIcone.jpg" alt="Instagram" style="height: 40px; margin-right: 35px" />
+      <!-- Logo centralizada -->
+      <a href="index.html" style="position: absolute">
+        <img
+          src="assets/logoSiteSemFundo.png"
+          alt="Logo"
+          style="height: 150px; margin-bottom: 50px"
+        />
       </a>
-      <a href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web" target="_blank">
-        <img src="assets/facebookIcone.jpg" alt="Facebook" style="height: 40px; margin-right: 35px" />
-      </a>
-      <a href="https://api.whatsapp.com/send/?phone=558171181482&text&type=phone_number&app_absent=0" target="_blank">
-        <img src="assets/whatsappIcone.jpg" alt="Whatsapp" style="height: 40px; margin-right: 35px" />
-      </a>
+
+      <hr class="custom-hr" style="width: 31%; margin-right: 10px" />
     </div>
-  </div>
-</nav>
 
-<!-- Alinhamento central com logo e linhas horizontais -->
-<div class="d-flex justify-content-center align-items-center" style="margin: 30px 0; position: relative;">
-  <hr class="custom-hr" style="width: 31%; margin: 0;" />
-  
-  <!-- Logo centralizada -->
-  <a href="index.html" style="position: absolute;">
-    <img src="assets/logoSite.jpg" alt="Logo" style="height: 150px; margin-bottom: 50px;" />
-  </a>
-  
-  <hr class="custom-hr" style="width: 40%; margin: 0;" />
-</div>
+    <!-- Menu centralizado com 4 opções -->
+    <nav class="navbar navbar-expand-lg" style="margin: 50px 0 15px 0">
+      <div class="container d-flex justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <a class="nav-link active" href="index.html">Início</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="html/catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="html/pintores.html">Pintores</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="html/vitrine.html">Vitrine</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-<!-- Menu centralizado com 4 opções -->
-<nav class="navbar navbar-expand-lg" style="margin: 50px 0 15px 0">
-  <div class="container d-flex justify-content-center">
-    <ul class="navbar-nav">
-      <li class="nav-item mx-3">
-        <a class="nav-link" href="index.html">Início</a>
-      </li>
-      <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Catálogo</a>
-      </li>
-      <li class="nav-item mx-3">
-        <a class="nav-link" href="#">Pintores</a>
-      </li>
-      <li class="nav-item mx-3">
-        <a class="nav-link" href="html/vitrine.html">Vitrine</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<a href="https://wa.me/558171181482" target="_blank" class="whatsapp-button">
-  <img src="assets/iconeWhatsaap.png" alt="WhatsApp" class="whatsapp-icon" />
-  <img src="assets/linha.png" class="line-icon" />
-  <span class="whatsapp-text">Consultoria grátis</span>
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <a
+      href="https://wa.me/558171181482"
+      target="_blank"
+      class="whatsapp-button"
+    >
+      <img
+        src="assets/iconeWhatsaap.png"
+        alt="WhatsApp"
+        class="whatsapp-icon"
+      />
+      <img src="assets/linha.png" class="line-icon" />
+      <span class="whatsapp-text">Consultoria grátis</span>
+    </a>
 
     <div
       id="carouselExampleIndicators"
@@ -174,21 +190,21 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img
-            src="assets/imagemIlustrativaMoldura3.jpg"
+            src="assets/IMG-20240914-WA0161 (1).jpg"
             class="d-block"
             alt="Quadro 1"
           />
         </div>
         <div class="carousel-item">
           <img
-            src="assets/pexels-punttim-139764 (2).jpg"
+            src="assets/imagemIlustrativaMoldura2.jpg"
             class="d-block"
             alt="Quadro 2"
           />
         </div>
         <div class="carousel-item">
           <img
-            src="assets/pexels-rachel-claire-5490182 (1).jpg"
+            src="assets/imagemIlustrativaMoldura1.jpg"
             class="d-block"
             alt="Quadro 3"
           />
@@ -212,79 +228,108 @@
       </button>
     </div>
 
-    <section class="services-section text-center" style="padding: 40px 0;">
+    <section class="services-section text-center" style="padding: 40px 0">
       <h2>Serviços</h2>
-      <div class="container" style="background-color: #d9d9d9; height: 180px;">
-        <div class="row d-flex justify-content-between align-items-center mt-4" style="height: 100%;">
+      <div class="container" style="background-color: #d9d9d9; height: 180px">
+        <div
+          class="row d-flex justify-content-between align-items-center mt-4"
+          style="height: 100%"
+        >
           <!-- Molduras -->
-          <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <div style="display: flex; align-items: center;">
-              <div class="service-icon-wrapper" 
-                   style="
-                     border: 1px solid black;
-                     border-radius: 50%;
-                     width: 100px;
-                     height: 100px;
-                     display: flex;
-                     justify-content: center;
-                     align-items: center;">
-                <img src="assets/molduraIcone.png" alt="Molduras" style="width: 50px" />
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center"
+          >
+            <div style="display: flex; align-items: center">
+              <div
+                class="service-icon-wrapper"
+                style="
+                  border: 1px solid black;
+                  border-radius: 50%;
+                  width: 100px;
+                  height: 100px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="assets/molduraIcone.png"
+                  alt="Molduras"
+                  style="width: 50px"
+                />
               </div>
-              <h3 style="margin-left: 15px;">Molduras</h3>
+              <h3 style="margin-left: 15px">Molduras</h3>
             </div>
           </div>
-    
+
           <!-- Pinturas -->
-          <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <div style="display: flex; align-items: center;">
-              <div class="service-icon-wrapper" 
-                   style="
-                     border: 1px solid black;
-                     border-radius: 50%;
-                     width: 100px;
-                     height: 100px;
-                     display: flex;
-                     justify-content: center;
-                     align-items: center;">
-                <img src="assets/pinturaIcone.png" alt="Pinturas" style="width: 50px" />
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center"
+          >
+            <div style="display: flex; align-items: center">
+              <div
+                class="service-icon-wrapper"
+                style="
+                  border: 1px solid black;
+                  border-radius: 50%;
+                  width: 100px;
+                  height: 100px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="assets/pinturaIcone.png"
+                  alt="Pinturas"
+                  style="width: 50px"
+                />
               </div>
-              <h3 style="margin-left: 15px;">Pinturas</h3>
+              <h3 style="margin-left: 15px">Pinturas</h3>
             </div>
           </div>
-    
+
           <!-- Espelhos -->
-          <div class="col-md-4 d-flex justify-content-center align-items-center">
-            <div style="display: flex; align-items: center;">
-              <div class="service-icon-wrapper" 
-                   style="
-                     border: 1px solid black;
-                     border-radius: 50%;
-                     width: 100px;
-                     height: 100px;
-                     display: flex;
-                     justify-content: center;
-                     align-items: center;">
-                <img src="assets/espelhoIcone.png" alt="Espelhos" style="width: 50px" />
+          <div
+            class="col-md-4 d-flex justify-content-center align-items-center"
+          >
+            <div style="display: flex; align-items: center">
+              <div
+                class="service-icon-wrapper"
+                style="
+                  border: 1px solid black;
+                  border-radius: 50%;
+                  width: 100px;
+                  height: 100px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="assets/espelhoIcone.png"
+                  alt="Espelhos"
+                  style="width: 50px"
+                />
               </div>
-              <h3 style="margin-left: 15px;">Espelhos</h3>
+              <h3 style="margin-left: 15px">Espelhos</h3>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
 
     <section class="new-items-section text-center">
       <h2>Novos Itens</h2>
-      <p>Nossos últimos trabalhos realizados</p>
+      <p style="font-size: 1.2rem">Nossos últimos trabalhos realizados</p>
 
       <div class="container mt-4">
         <div class="row d-flex justify-content-center">
           <!-- Card 1 -->
           <div class="col-md-4 mb-4">
-            <div class="card rounded shadow-lg" style="border-radius: 5px">
+            <div style="border-radius: 5px">
               <img
-                src="assets/imagemIlustrativaMoldura4.avif"
+                src="assets/IMG-20240914-WA0138.jpg"
                 class="card-img-top"
                 alt="Novo Item 1"
                 style="border-radius: 20px; object-fit: cover; height: 300px"
@@ -294,9 +339,9 @@
 
           <!-- Card 2 -->
           <div class="col-md-4 mb-4">
-            <div class="card rounded shadow-lg" style="border-radius: 5px">
+            <div style="border-radius: 5px">
               <img
-                src="assets/imagemIlustrativaMoldura5.png"
+                src="assets/IMG-20240914-WA0155.jpg"
                 class="card-img-top"
                 alt="Novo Item 2"
                 style="border-radius: 20px; object-fit: cover; height: 300px"
@@ -306,9 +351,9 @@
 
           <!-- Card 3 -->
           <div class="col-md-4 mb-4">
-            <div class="card rounded shadow-lg" style="border-radius: 5px">
+            <div style="border-radius: 5px">
               <img
-                src="assets/novoItem3.jpg"
+                src="assets/IMG-20240914-WA0188 (1).jpg"
                 class="card-img-top"
                 alt="Novo Item 3"
                 style="border-radius: 20px; object-fit: cover; height: 300px"
@@ -323,7 +368,7 @@
       <div
         class="card text-white bg-cover mt-5"
         style="
-          background-image: url('assets/imagemIlustrativaMoldura6.svg');
+          background-image: url('assets/imagemIlustrativaMoldura4.svg');
           height: 360px;
           width: 1300px;
           margin-bottom: 70px;
@@ -363,9 +408,9 @@
       <div class="row d-flex justify-content-center">
         <!-- Card 1 -->
         <div class="col-md-4 mb-4">
-          <div class="card rounded shadow-lg" style="border-radius: 5px">
+          <div style="border-radius: 5px">
             <img
-              src="assets/imagemIlustrativaMoldura4.avif"
+              src="assets/IMG-20240914-WA0141 (1).jpg"
               class="card-img-top"
               alt="Novo Item 1"
               style="border-radius: 20px; object-fit: cover; height: 300px"
@@ -375,9 +420,9 @@
 
         <!-- Card 2 -->
         <div class="col-md-4 mb-4">
-          <div class="card rounded shadow-lg" style="border-radius: 5px">
+          <div style="border-radius: 5px">
             <img
-              src="assets/imagemIlustrativaMoldura5.png"
+              src="assets/IMG-20240914-WA0139 (1).jpg"
               class="card-img-top"
               alt="Novo Item 2"
               style="border-radius: 20px; object-fit: cover; height: 300px"
@@ -387,9 +432,9 @@
 
         <!-- Card 3 -->
         <div class="col-md-4 mb-4">
-          <div class="card rounded shadow-lg" style="border-radius: 5px">
+          <div style="border-radius: 5px">
             <img
-              src="assets/novoItem3.jpg"
+              src="assets/IMG-20240914-WA0186.jpg"
               class="card-img-top"
               alt="Novo Item 3"
               style="border-radius: 20px; object-fit: cover; height: 300px"
@@ -416,103 +461,124 @@
     </section>
 
     <footer
-      style="
-        background-color: #5a96e5;
-        max-width: 1300px;
-        margin: 0 auto;
-        padding: 20px 0;
-      "
-    >
-      <div class="container d-flex justify-content-between align-items-center">
-        <div class="footer-logo" style="flex: 1">
-          <img
-            src="assets/logoSiteSemFundo.png"
-            alt="Logo Moldureria Cardinal"
-            class="img-fluid"
-            style="width: 150px; height: auto"
-          />
+  style="
+    background-color: #d9d9d9;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-bottom: 50px;
+    font-weight: bold;
+  "
+>
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="footer-logo" style="flex: 1">
+      <img
+        src="assets/logoSiteSemFundo.png"
+        alt="Logo Molduraria Cardinal"
+        class="img-fluid"
+        style="width: 190px; height: auto; margin-left: 30px;"
+      />
+    </div>
+
+    <div class="footer-content text-center" style="flex: 2">
+      <h1 style="font-weight: bold; font-size: 2.5rem; margin-top: 15px;">Molduraria Cardinal</h1>
+
+      <div class="footer-links d-flex justify-content-center mt-3">
+        <div class="footer-link-column me-5">
+          <h3 style="font-size: 1.25rem; margin: 20px 0; font-weight: bold;">Sobre nós</h3>
+          <ul class="list-unstyled" style="font-size: 1rem; text-align: left;">
+            <li style="margin-bottom: 10px;"><a href="#">História</a></li>
+            <li style="margin-bottom: 10px;"><a href="#">Time</a></li>
+          </ul>
         </div>
 
-        <div class="footer-content text-center" style="flex: 2">
-          <h1 style="font-weight: bold">Moldureria Cardinal</h1>
+        <div class="footer-link-column me-5">
+          <h3 style="font-size: 1.25rem; margin: 20px 0; font-weight: bold;">Menu</h3>
+          <ul class="list-unstyled" style="font-size: 1rem; text-align: left;">
+            <li style="margin-bottom: 10px;"><a href="index.html">Início</a></li>
+            <li style="margin-bottom: 10px;"><a href="#">Catálogo</a></li>
+            <li style="margin-bottom: 10px;"><a href="#">Pintores</a></li>
+            <li style="margin-bottom: 10px;"><a href="#">Vitrine</a></li>
+          </ul>
+        </div>
 
-          <div class="footer-links d-flex justify-content-center mt-3">
-            <div class="footer-link-column me-5">
-              <h3>Sobre nós</h3>
-              <ul class="list-unstyled">
-                <li><a href="#">História</a></li>
-                <li><a href="#">Time</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-link-column me-5">
-              <h3>Menu</h3>
-              <ul class="list-unstyled">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="#">Catálogo</a></li>
-                <li><a href="#">Pintores</a></li>
-                <li><a href="#">Vitrine</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-link-column">
-              <h3>Rede social</h3>
-              <ul class="list-unstyled">
-                <li>
-                  <a
-                    href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr"
-                    target="_blank"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web"
-                    target="_blank"
-                    >Facebook</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://api.whatsapp.com/send/?phone=558171181482&text&type=phone_number&app_absent=0"
-                    target="_blank"
-                    >WhatsApp</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div class="footer-link-column">
+          <h3 style="font-size: 1.25rem; margin: 20px 0; font-weight: bold;">Rede social</h3>
+          <ul class="list-unstyled" style="font-size: 1rem; text-align: left;">
+            <li style="margin-bottom: 10px;">
+              <a
+                href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li style="margin-bottom: 10px;">
+              <a
+                href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li style="margin-bottom: 10px;">
+              <a
+                href="https://api.whatsapp.com/send/?phone=558171181482&text&type=phone_number&app_absent=0"
+                target="_blank"
+                >WhatsApp</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
+  </div>
 
-      <hr class="my-4" />
+  <hr class="my-4" style="width: 96%; margin: 0 auto;" />
 
-      <div
-        class="footer-bottom d-flex justify-content-between align-items-center"
-        style="padding: 0 20px"
+  <div
+    class="footer-bottom d-flex justify-content-between align-items-center"
+    style="padding: 0 20px"
+  >
+    <p class="mb-0" style="font-weight: bold; margin-left: 30px;">
+      &copy; 2024 Molduraria Cardinal. Todos os direitos reservados.
+    </p>
+    <a href="#" class="text-decoration-none" style="margin-right: 250px; font-weight: bold;">Termos de Serviço</a>
+    <div class="d-flex align-items-center" style="margin-right: 30px;">
+      <a
+        href="#inicioPagina"
+        class="text-decoration-none me-2"
+        style="font-size: 1.4rem; font-weight: bold;"
       >
-        <p class="mb-0">
-          &copy; 2024 Moldureria Cardinal. Todos os direitos reservados.
-        </p>
-        <a href="#" class="text-decoration-none">Termos de Serviço</a>
-        <div class="d-flex align-items-center">
-          <a href="#inicioPagina" class="text-decoration-none me-2">
-            Voltar para o Início
-          </a>
-          <img
-            src="assets/setaParaCima.png"
-            alt="seta para cima"
-            style="width: 20px; height: auto"
-          />
-        </div>
-      </div>
-    </footer>
+        Voltar para o topo
+      </a>
+      <img
+        src="assets/setaParaCima.png"
+        alt="seta para cima"
+        style="width: 20px; height: auto"
+      />
+    </div>
+  </div>
+</footer>
+
 
     <!-- Script do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 
   <script>
+    const links = document.querySelectorAll(".navbar-nav .nav-link");
+    const currentUrl = window.location.pathname;
+
+    // Função para verificar e definir a classe 'active'
+    links.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (
+        href === currentUrl ||
+        (href.includes("index.html") && currentUrl === "/")
+      ) {
+        link.classList.add("active");
+      }
+    });
+
     // Remove qualquer rolagem anterior logo ao carregar a página, sem animação
     if ("scrollRestoration" in history) {
       history.scrollRestoration = "manual"; // Impede que o navegador restaure a posição de rolagem
