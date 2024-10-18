@@ -6,7 +6,7 @@
     <title>Molduraria Cardinal</title>
     <link
       rel="shortcut icon"
-      href="../assets/logoSite.svg"
+      href="../assets/logoSite.jpg"
       type="image/x-icon"
     />
     <link
@@ -15,42 +15,115 @@
     />
     <link rel="stylesheet" href="../index.css" />
     <link rel="stylesheet" href="../style/reset.css" />
+
+    <style>
+      .imagem-fixa {
+        width: 100%; 
+        max-width: 220px; 
+        height: 220px; 
+        object-fit: cover;
+        margin: 20px auto 0;
+      }
+
+      .card {
+        border: 1px solid #000;
+        border-radius: 10px;
+        text-align: center;
+        width: 90%; 
+        max-width: 280px; 
+        margin: 0 auto; 
+      }
+
+      .card p {
+        font-weight: bold;
+      }
+
+      .col {
+        padding: 0 15px; 
+      }
+
+      .row {
+        justify-content: center;
+      }
+    </style>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container d-flex justify-content-between align-items-center">
-        <a href="index.html">
-          <div class="d-flex align-items-center" style="margin-left: 50px">
+    <nav class="navbar">
+      <div class="container d-flex align-items-center">
+        <div class="d-flex align-items-center">
+          <a
+            href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr"
+            target="_blank"
+          >
             <img
-              src="../assets/logoSite.svg"
-              alt="Logo"
-              style="height: 100px; margin-right: -50px"
+              src="../assets/instagramIcone.jpg"
+              alt="Instagram"
+              style="height: 40px; margin-right: 35px"
             />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web"
+            target="_blank"
+          >
             <img
-              src="../assets/nomeMadureiraCardinal.png"
-              alt="Nome Madureira Cardinal"
+              src="../assets/facebookIcone.jpg"
+              alt="Facebook"
+              style="height: 40px; margin-right: 35px"
             />
-          </div>
-        </a>
-        <ul class="navbar-nav ms-auto me-5">
-          <li class="nav-item me-4">
-            <a class="nav-link" href="../index.html">Início</a>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=558171181482&text&type=phone_number&app_absent=0"
+            target="_blank"
+          >
+            <img
+              src="../assets/whatsappIcone.jpg"
+              alt="Whatsapp"
+              style="height: 40px; margin-right: 35px"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="d-flex justify-content-center align-items-center"
+      style="margin: 30px 0; position: relative"
+    >
+      <hr class="custom-hr" style="width: 31%; margin-right: 160px" />
+
+      <!-- Logo centralizada -->
+      <a href="index.html" style="position: absolute">
+        <img
+          src="../assets/logoSiteSemFundo.png"
+          alt="Logo"
+          style="height: 150px; margin-bottom: 50px"
+        />
+      </a>
+
+      <hr class="custom-hr" style="width: 31%; margin-right: 10px" />
+    </div>
+
+    <!-- Menu centralizado com 4 opções -->
+    <nav class="navbar navbar-expand-lg" style="margin: 50px 0 15px 0">
+      <div class="container d-flex justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <a class="nav-link active" href="../index.html">Início</a>
           </li>
-          <li class="nav-item me-4">
-            <a class="nav-link" href="#">Loja</a>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="../html/catalogo.html">Catálogo</a>
           </li>
-          <li class="nav-item me-4">
-            <a class="nav-link" href="#">Categoria</a>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="../html/pintores.html">Pintores</a>
           </li>
-          <li class="nav-item me-4">
-            <a class="nav-link" href="html/vitrine.html">Vitrine</a>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="../html/vitrine.html">Vitrine</a>
           </li>
         </ul>
       </div>
     </nav>
-    <hr />
-    <!-- Botão do Whatsaap -->
+
     <a
       href="https://wa.me/558171181482"
       target="_blank"
@@ -66,50 +139,164 @@
     </a>
 
     <div class="container my-5">
-      <h2 style="padding-bottom: 15px; font-weight: bold">Molduras</h2>
-      <div class="row row-cols-md-4 g-5">
-        <img src="../assets/moldura1.jpg" alt="Imagem 1" />
+      <div class="row row-cols-1 row-cols-md-3 g-3">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/imagem1Leonardo Valencia.jpg"
+              class="card-img-top imagem-fixa"
+              alt="Imagem 1"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Leonardo Valencia</p>
+            </div>
+          </div>
+        </div>
 
-        <img src="../assets/moldura5.jpg" alt="Imagem 2" />
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/imagem1Nubia Villalobos.jpg"
+              class="card-img-top imagem-fixa"
+              alt="Imagem 2"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Nubia Villalobos</p>
+            </div>
+          </div>
+        </div>
 
-        <img src="../assets/moldura8.jpg" alt="Imagem 3" />
-
-        <img src="../assets/moldura4.jpg" alt="Imagem 4" />
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/imagem2Leonardo Valencia.jpg"
+              class="card-img-top imagem-fixa"
+              alt="Imagem 3"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Leonardo Valencia</p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="row row-cols-1 row-cols-md-4 g-5 mt-4">
-        <img src="../assets/moldura2.jpg" alt="Imagem 5" />
+      <div class="row row-cols-1 row-cols-md-3 g-3 my-4">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/imagem4Leonardo Valencia.jpg"
+              class="card-img-top imagem-fixa"
+              alt="Imagem 1"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Leonardo Valencia</p>
+            </div>
+          </div>
+        </div>
 
-        <img src="../assets/moldura7.jpg" alt="Imagem 6" />
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/imagem5Leonardo Valencia.jpg"
+              class="card-img-top imagem-fixa"
+              alt="Imagem 2"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Leonardo Valencia</p>
+            </div>
+          </div>
+        </div>
 
-        <img src="../assets/moldura3.jpg" alt="Imagem 7" />
-
-        <img src="../assets/moldura6.jpg" alt="Imagem 8" />
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="../assets/imagem6Leonardo Valencia.jpg"
+              class="card-img-top imagem-fixa"
+              alt="Imagem 3"
+            />
+            <div class="card-body">
+              <p class="card-text text-center">Leonardo Valencia</p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-3 my-4">
+
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="../assets/IMG-20240924-WA0036.jpg" class="card-img-top imagem-fixa" alt="Imagem 1">
+            <div class="card-body">
+              <p class="card-text text-center">Leonardo Valencia</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="../assets/IMG-20240924-WA0040.jpg" class="card-img-top imagem-fixa" alt="Imagem 2">
+            <div class="card-body">
+              <p class="card-text text-center">Leonardo Valencia</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="../assets/IMG-20240924-WA0042.jpg" class="card-img-top imagem-fixa" alt="Imagem 3">
+            <div class="card-body">
+              <p class="card-text text-center">Leonardo Valencia</p>
+            </div>
+          </div>
+        </div>
+
     </div>
 
-    <footer class="text-center">
-      <div class="container">
-        <p>Maturreira Cardinal</p>
 
-        <a href="https://wa.me/c/558171181482" target="_blank">Whatsapp</a>
-        |
-        <a
-          href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr"
-          target="_blank"
-          >Instagram</a
-        >
-        |
-        <a
-          href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web"
-          target="_blank"
-          >Facebook</a
-        >
-        |
-        <a href="https://policies.google.com/privacy?hl=pt-BR" target="_blank"
-          >Política de Privacidade</a
-        >
+    <div class="row row-cols-1 row-cols-md-3 g-3 my-4">
+
+      <!-- Card 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="../assets/imagem7Leonardo Valencia.jpg" class="card-img-top imagem-fixa" alt="Imagem 1">
+          <div class="card-body">
+            <p class="card-text text-center">Leonardo Valencia</p>
+          </div>
+        </div>
       </div>
-    </footer>
+  
+      <!-- Card 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="../assets/imagem3Leonardo Valencia.jpg" class="card-img-top imagem-fixa" alt="Imagem 2">
+          <div class="card-body">
+            <p class="card-text">Leonardo Valencia</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="../assets/Imagem do WhatsApp de 2024-10-18 à(s) 17.19.51_1aee3a14.jpg" class="card-img-top imagem-fixa" alt="Imagem 3">
+          <div class="card-body">
+            <p class="card-text text-center">Leonardo Valencia</p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../index.js"></script>
   </body>
 </html>

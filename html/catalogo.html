@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="shortcut icon" href="assets/logoSite.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/logoSite.jpg" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -78,27 +78,7 @@
     <p>dsdsdsds</p>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Seleciona todos os links da navbar
-      const links = document.querySelectorAll('.navbar-nav .nav-link');
-
-      // Obtém o caminho atual da URL (última parte do caminho)
-      const currentPath = window.location.pathname.split('/').pop();
-
-      // Percorre os links e adiciona a classe 'active' ao correspondente
-      links.forEach(link => {
-        const href = link.getAttribute('href').split('/').pop();
-        
-        if (currentPath === href) {
-          link.classList.add('active');
-        }
-      });
-
-      // Remove rolagem anterior logo ao carregar a página
-      if ("scrollRestoration" in history) {
-        history.scrollRestoration = "manual"; // Impede que o navegador restaure a posição de rolagem
-      }
-      window.scrollTo(0, 0); // Garante que o topo da página seja exibido
-    </script>
+    <script src="../index.js"></script>
+    
 </body>
 </html>
