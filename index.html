@@ -69,19 +69,44 @@
       <hr class="custom-hr" style="width: 31%; margin-right: 10px" />
     </div>
 
-    <!-- Menu centralizado com 4 opções -->
     <nav class="navbar navbar-expand-lg" style="margin: 50px 0 15px 0">
       <div class="container d-flex justify-content-center">
         <ul class="navbar-nav">
           <li class="nav-item mx-3">
-            <a class="nav-link active" href="index.html">Início</a>
+            <a class="nav-link" href="index.html">Início</a>
           </li>
           <li class="nav-item mx-3">
             <a class="nav-link" href="html/catalogo.html">Catálogo</a>
           </li>
-          <li class="nav-item mx-3">
-            <a class="nav-link" href="html/pintores.html">Pintores</a>
+
+          <!-- Menu Suspenso para Pintores -->
+          <li class="nav-item dropdown mx-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Pintores
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="html/artistaLeonardoValencia.html"
+                  >Leonardo Valencia</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="html/artistaNubiaVillalobos.html"
+                  >Nubia Villalobos</a
+                >
+              </li>
+            </ul>
           </li>
+
           <li class="nav-item mx-3">
             <a class="nav-link" href="html/vitrine.html">Vitrine</a>
           </li>

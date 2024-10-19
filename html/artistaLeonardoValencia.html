@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Molduraria - Leonardo Valencia</title>
+    <link
+      rel="shortcut icon"
+      href="../assets/logoSite.jpg"
+      type="image/x-icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../index.css" />
+    <link rel="stylesheet" href="../style/reset.css" />
+
+    <style>
+      .imagem-banner {
+        width: 72%;
+        height: 400px;
+        object-fit: cover;
+        margin-bottom: 30px;
+      }
+
+      .sobre-mim {
+        padding: 50px;
+      }
+
+      .sobre-mim h2 {
+        font-weight: bold;
+      }
+
+      .sobre-mim p {
+        font-size: 1.1rem;
+      }
+
+      .img-retangular {
+    height: 300px; /* Defina a altura desejada */
+    width: calc(100% - 100px); /* Ocupa toda a largura da coluna, subtraindo as margens */
+    object-fit: cover; /* Adapta a imagem sem distorção */
+    margin: 20px 10px; /* Margem em cima e embaixo, e lateral */
+}
+
+.img-quadrado {
+    height: 300px; /* Defina a altura desejada */
+    width: calc(100% - 100px); /* Preenche toda a coluna, subtraindo as margens */
+    aspect-ratio: 1 / 1; /* Mantém o formato quadrado */
+    object-fit: cover; /* Adapta a imagem ao quadrado sem distorcer */
+    margin: 10px 10px; /* Margem em cima e embaixo, e lateral */
+}
+
+.container {
+    max-width: 1450px;
+    margin: 0 auto; /* Centraliza o conteúdo na tela */
+    padding: 0 30px; /* Adiciona espaço nas laterais */
+}
+
+
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <!-- Redes Sociais -->
+    <nav class="navbar">
+      <div class="container d-flex align-items-center">
+        <div class="d-flex align-items-center">
+          <a
+            href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr"
+            target="_blank"
+          >
+            <img
+              src="../assets/instagramIcone.jpg"
+              alt="Instagram"
+              style="height: 40px; margin-right: 35px"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web"
+            target="_blank"
+          >
+            <img
+              src="../assets/facebookIcone.jpg"
+              alt="Facebook"
+              style="height: 40px; margin-right: 35px"
+            />
+          </a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=558171181482&text&type=phone_number&app_absent=0"
+            target="_blank"
+          >
+            <img
+              src="../assets/whatsappIcone.jpg"
+              alt="Whatsapp"
+              style="height: 40px; margin-right: 35px"
+            />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Logo Centralizada -->
+    <div
+      class="d-flex justify-content-center align-items-center"
+      style="margin: 30px 0; position: relative"
+    >
+      <hr class="custom-hr" style="width: 31%; margin-right: 160px" />
+      <a href="index.html" style="position: absolute">
+        <img
+          src="../assets/logoSiteSemFundo.png"
+          alt="Logo"
+          style="height: 150px; margin-bottom: 50px"
+        />
+      </a>
+      <hr class="custom-hr" style="width: 31%; margin-right: 10px" />
+    </div>
+
+    <!-- Menu de Navegação -->
+    <nav class="navbar navbar-expand-lg" style="margin: 50px 0 15px 0">
+      <div class="container d-flex justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="../index.html">Início</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="../html/catalogo.html">Catálogo</a>
+          </li>
+          <li class="nav-item dropdown mx-3">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Pintores
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="../html/artistaLeonardoValencia.html"
+                  >Leonardo Valência</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="../html/artistaNubiaVillalobos.html"
+                  >Nubia Villalobos</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link" href="./vitrine.html">Vitrine</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Imagem Grande Centralizada -->
+    <div class="d-flex justify-content-center">
+      <img
+        src="../assets/Group 94.jpg"
+        alt="Banner"
+        class="imagem-banner my-3"
+      />
+    </div>
+
+    <!-- Seção Sobre Mim -->
+    <div class="container sobre-mim">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Sobre o Pintor</h2>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Nasceu na capital do estado de Mérida em 20 de setembro de 1972.
+            Filho de um pai fotógrafo e de uma mãe dona de casa. Desde muito
+            cedo começou a interessar-se pelas artes plásticas. Os seus pais,
+            apercebendo-se disso, levaram-no, aos 9 anos, para a escola de Artes
+            e Ofícios. os seus pais levaram-no, aos 9 anos, para a escola de
+            Artes e Ofícios de Ejido, no estado de Mérida, paralelamente aos
+            seus estudos liceais na escola salesiana Escola Salesiana Monsenhor
+            Jauregui.
+            <br />
+            Depois de concluir os estudos liceais Depois de concluir os estudos
+            liceais, explorou várias carreiras e entrou na Escola Técnica
+            Salesiana Salesiana para estudar zootecnia. Permanece aí por pouco
+            tempo e depois entra na Escola de Artes Gráficas do “INCE”. Escola
+            de Artes Gráficas do “INCE”, recebendo o título de “Técnico de Artes
+            Graficas del INCE”. recebendo o título de “Técnico de Artes
+            Gráficas”. em artes gráficas”.
+            <br />
+            <!-- Ao mesmo tempo, teve aulas de música
+            com diferentes professores em diferentes conservatórios. Ao mesmo
+            tempo, teve aulas de música com diferentes professores em diferentes
+            conservatórios. No final dos seus estudos em artes gráficas começou
+            a ser convidado por pequenos grupos de artistas para convidado por
+            pequenos grupos de artistas para participar em exposições
+            colectivas, entre outros. Participar em exposições colectivas, entre
+            as quais se destacam as seguintes: Salão de Intercâmbio do Ateneo de
+            Bellas Artes del Estado Zulia, Amigos para as MacArts Zulia, Amigos
+            para o Maczul, entre outros. Na sua maturidade como artista plástico
+            foi o fundador do atelier de desenho livre na da Faculdade
+            Experimental de Arte da Universidade de Zulia, e professor convidado
+            da del Zulia e professor convidado do departamento de desenho. Foi
+            redator e cartoonista da revista semanal ilustrada “Los otros
+            Fantoches” e redator da revista semanal ilustrada “Los otros
+            Fantoches”. Fantoches” e redator do semanário "Correo del Arte".
+            Produtor e difusor dos programas radiofónicos “Días y Flo- res” e
+            "El vuelo del duende", transmitidos em estações de rádio nacionais.
+            Emissoras de rádio nacionais. Atualmente é compositor, músico e
+            cantor -->
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container my-5">
+        <div class="row g-0">
+          <!-- Primeira fileira: Retangular + Quadrado -->
+          <div class="col-md-8">
+            <img src="../assets/IMG-20240924-WA0051 1.jpg" alt="Imagem 1" class="img-fluid img-retangular" />
+          </div>
+          <div class="col-md-4">
+            <img src="../assets/IMG-20240924-WA0037 1.jpg" alt="Imagem 2" class="img-fluid img-quadrado" />
+          </div>
+      
+          <!-- Segunda fileira: Quadrado + Retangular -->
+          <div class="col-md-4">
+            <img src="../assets/imagem2Leonardo Valencia.jpg" alt="Imagem 3" class="img-fluid img-quadrado" />
+          </div>
+          <div class="col-md-8">
+            <img src="../assets/IMG-20240924-WA0050 1.jpg" alt="Imagem 4" class="img-fluid img-retangular" />
+          </div>
+      
+          <!-- Terceira fileira: Retangular + Quadrado -->
+          <div class="col-md-8">
+            <img src="../assets/IMG-20240924-WA0041 1.jpg" alt="Imagem 5" class="img-fluid img-retangular" />
+          </div>
+          <div class="col-md-4">
+            <img src="../assets/IMG-20240924-WA0036.jpg" alt="Imagem 6" class="img-fluid img-quadrado" />
+          </div>
+      
+          <!-- Quarta fileira: Quadrado + Retangular -->
+          <div class="col-md-4">
+            <img src="../assets/IMG-20240924-WA0040.jpg" alt="Imagem 7" class="img-fluid img-quadrado" />
+          </div>
+          <div class="col-md-8">
+            <img src="../assets/IMG-20240924-WA0043 1.jpg" alt="Imagem 8" class="img-fluid img-retangular" />
+          </div>
+        </div>
+      </div>
+      
+      <footer
+      style="
+        background-color: #d9d9d9;
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 20px 0;
+        margin-bottom: 50px;
+        font-weight: bold;
+      "
+    >
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="footer-logo" style="flex: 1">
+          <img
+            src="assets/logoSiteSemFundo.png"
+            alt="Logo Molduraria Cardinal"
+            class="img-fluid"
+            style="width: 190px; height: auto; margin-left: 30px"
+          />
+        </div>
+
+        <div class="footer-content text-center" style="flex: 2">
+          <h1 style="font-weight: bold; font-size: 2.5rem; margin-top: 15px">
+            Molduraria Cardinal
+          </h1>
+
+          <div class="footer-links d-flex justify-content-center mt-3">
+            <div class="footer-link-column me-5">
+              <h3 style="font-size: 1.25rem; margin: 20px 0; font-weight: bold">
+                Sobre nós
+              </h3>
+              <ul
+                class="list-unstyled"
+                style="font-size: 1rem; text-align: left"
+              >
+                <li style="margin-bottom: 10px"><a href="#">História</a></li>
+                <li style="margin-bottom: 10px"><a href="#">Time</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-link-column me-5">
+              <h3 style="font-size: 1.25rem; margin: 20px 0; font-weight: bold">
+                Menu
+              </h3>
+              <ul
+                class="list-unstyled"
+                style="font-size: 1rem; text-align: left"
+              >
+                <li style="margin-bottom: 10px">
+                  <a href="index.html">Início</a>
+                </li>
+                <li style="margin-bottom: 10px"><a href="#">Catálogo</a></li>
+                <li style="margin-bottom: 10px"><a href="#">Pintores</a></li>
+                <li style="margin-bottom: 10px"><a href="#">Vitrine</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-link-column">
+              <h3 style="font-size: 1.25rem; margin: 20px 0; font-weight: bold">
+                Rede social
+              </h3>
+              <ul
+                class="list-unstyled"
+                style="font-size: 1rem; text-align: left"
+              >
+                <li style="margin-bottom: 10px">
+                  <a
+                    href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr"
+                    target="_blank"
+                    >Instagram</a
+                  >
+                </li>
+                <li style="margin-bottom: 10px">
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web"
+                    target="_blank"
+                    >Facebook</a
+                  >
+                </li>
+                <li style="margin-bottom: 10px">
+                  <a
+                    href="https://api.whatsapp.com/send/?phone=558171181482&text&type=phone_number&app_absent=0"
+                    target="_blank"
+                    >WhatsApp</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-4" style="width: 96%; margin: 0 auto" />
+
+      <div
+        class="footer-bottom d-flex justify-content-between align-items-center"
+        style="padding: 0 20px"
+      >
+        <p class="mb-0" style="font-weight: bold; margin-left: 30px">
+          &copy; 2024 Molduraria Cardinal. Todos os direitos reservados.
+        </p>
+        <a
+          href="#"
+          class="text-decoration-none"
+          style="margin-right: 250px; font-weight: bold"
+          >Termos de Serviço</a
+        >
+        <div class="d-flex align-items-center" style="margin-right: 30px">
+          <a
+            href="#inicioPagina"
+            class="text-decoration-none me-2"
+            style="font-size: 1.4rem; font-weight: bold"
+          >
+            Voltar para o topo
+          </a>
+          <img
+            src="assets/setaParaCima.png"
+            alt="seta para cima"
+            style="width: 20px; height: auto"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../index.js"></script>
+  </body>
+</html>
