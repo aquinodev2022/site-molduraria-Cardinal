@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Molduraria - Leonardo Valencia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inder&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="shortcut icon"
       href="../assets/logoSite.jpg"
@@ -29,43 +35,36 @@
       }
 
       .sobre-mim h2 {
-        font-weight: bold;
+        font-family: "Inder", sans-serif;
       }
 
       .sobre-mim p {
         font-size: 1.1rem;
+        font-family: "Inder", sans-serif;
       }
 
       .img-retangular {
-    height: 300px; /* Defina a altura desejada */
-    width: calc(100% - 100px); /* Ocupa toda a largura da coluna, subtraindo as margens */
-    object-fit: cover; /* Adapta a imagem sem distorção */
-    margin: 20px 10px; /* Margem em cima e embaixo, e lateral */
-}
+        height: 300px;
+        width: calc(100% - 100px);
+        margin: 20px 20px;
+      }
 
-.img-quadrado {
-    height: 300px; /* Defina a altura desejada */
-    width: calc(100% - 100px); /* Preenche toda a coluna, subtraindo as margens */
-    aspect-ratio: 1 / 1; /* Mantém o formato quadrado */
-    object-fit: cover; /* Adapta a imagem ao quadrado sem distorcer */
-    margin: 10px 10px; /* Margem em cima e embaixo, e lateral */
-}
+      .img-quadrado {
+        height: 300px;
+        width: calc(90% - 18px);
+        aspect-ratio: 1 / 1;
+        margin: 10px 20px;
+      }
 
-.container {
-    max-width: 1450px;
-    margin: 0 auto; /* Centraliza o conteúdo na tela */
-    padding: 0 30px; /* Adiciona espaço nas laterais */
-}
-
-
-
-
-
+      .container {
+        max-width: 1420px;
+        margin: 0 auto;
+        padding: 0 30px;
+      }
     </style>
   </head>
 
-  <body>
-    <!-- Redes Sociais -->
+  <body id="inicioPagina">
     <nav class="navbar">
       <div class="container d-flex align-items-center">
         <div class="d-flex align-items-center">
@@ -109,7 +108,7 @@
       style="margin: 30px 0; position: relative"
     >
       <hr class="custom-hr" style="width: 31%; margin-right: 160px" />
-      <a href="index.html" style="position: absolute">
+      <a href="../index.html" style="position: absolute">
         <img
           src="../assets/logoSiteSemFundo.png"
           alt="Logo"
@@ -174,94 +173,102 @@
     </div>
 
     <!-- Seção Sobre Mim -->
-    <div class="container sobre-mim">
+    <div class="container sobre-mim my-4">
       <div class="row">
         <div class="col-md-6">
           <h2>Sobre o Pintor</h2>
         </div>
         <div class="col-md-6">
           <p>
-            Nasceu na capital do estado de Mérida em 20 de setembro de 1972.
-            Filho de um pai fotógrafo e de uma mãe dona de casa. Desde muito
-            cedo começou a interessar-se pelas artes plásticas. Os seus pais,
-            apercebendo-se disso, levaram-no, aos 9 anos, para a escola de Artes
-            e Ofícios. os seus pais levaram-no, aos 9 anos, para a escola de
-            Artes e Ofícios de Ejido, no estado de Mérida, paralelamente aos
-            seus estudos liceais na escola salesiana Escola Salesiana Monsenhor
-            Jauregui.
+            Nascido na capital de Mérida em 20 de setembro de 1972. Desde cedo
+            demonstrou interesse pelas artes plásticas. Aos 9 anos, ingressou na
+            Escola de Artes e Ofícios de Ejido, enquanto estudava no colégio
+            Salesiano Monsenhor Jáuregui. Embora tenha inicialmente tentado
+            zootecnia, formou-se como técnico em artes gráficas pelo INCE, além
+            de estudar música com diversos professores. <br />
             <br />
-            Depois de concluir os estudos liceais Depois de concluir os estudos
-            liceais, explorou várias carreiras e entrou na Escola Técnica
-            Salesiana Salesiana para estudar zootecnia. Permanece aí por pouco
-            tempo e depois entra na Escola de Artes Gráficas do “INCE”. Escola
-            de Artes Gráficas do “INCE”, recebendo o título de “Técnico de Artes
-            Graficas del INCE”. recebendo o título de “Técnico de Artes
-            Gráficas”. em artes gráficas”.
-            <br />
-            <!-- Ao mesmo tempo, teve aulas de música
-            com diferentes professores em diferentes conservatórios. Ao mesmo
-            tempo, teve aulas de música com diferentes professores em diferentes
-            conservatórios. No final dos seus estudos em artes gráficas começou
-            a ser convidado por pequenos grupos de artistas para convidado por
-            pequenos grupos de artistas para participar em exposições
-            colectivas, entre outros. Participar em exposições colectivas, entre
-            as quais se destacam as seguintes: Salão de Intercâmbio do Ateneo de
-            Bellas Artes del Estado Zulia, Amigos para as MacArts Zulia, Amigos
-            para o Maczul, entre outros. Na sua maturidade como artista plástico
-            foi o fundador do atelier de desenho livre na da Faculdade
-            Experimental de Arte da Universidade de Zulia, e professor convidado
-            da del Zulia e professor convidado do departamento de desenho. Foi
-            redator e cartoonista da revista semanal ilustrada “Los otros
-            Fantoches” e redator da revista semanal ilustrada “Los otros
-            Fantoches”. Fantoches” e redator do semanário "Correo del Arte".
-            Produtor e difusor dos programas radiofónicos “Días y Flo- res” e
-            "El vuelo del duende", transmitidos em estações de rádio nacionais.
-            Emissoras de rádio nacionais. Atualmente é compositor, músico e
-            cantor -->
+            Participou de exposições coletivas e fundou uma oficina de desenho
+            na Universidade de Zulia, onde também lecionou. Atualmente, atua
+            como compositor, músico, cantor e apresentador, promovendo arte e
+            turismo em nível nacional e internacional.
           </p>
         </div>
       </div>
     </div>
 
-    <hr />
+    <hr style="width: 72%; margin: 0 auto" class="my-5" />
 
-    <div class="container my-5">
-        <div class="row g-0">
-          <!-- Primeira fileira: Retangular + Quadrado -->
-          <div class="col-md-8">
-            <img src="../assets/IMG-20240924-WA0051 1.jpg" alt="Imagem 1" class="img-fluid img-retangular" />
-          </div>
-          <div class="col-md-4">
-            <img src="../assets/IMG-20240924-WA0037 1.jpg" alt="Imagem 2" class="img-fluid img-quadrado" />
-          </div>
-      
-          <!-- Segunda fileira: Quadrado + Retangular -->
-          <div class="col-md-4">
-            <img src="../assets/imagem2Leonardo Valencia.jpg" alt="Imagem 3" class="img-fluid img-quadrado" />
-          </div>
-          <div class="col-md-8">
-            <img src="../assets/IMG-20240924-WA0050 1.jpg" alt="Imagem 4" class="img-fluid img-retangular" />
-          </div>
-      
-          <!-- Terceira fileira: Retangular + Quadrado -->
-          <div class="col-md-8">
-            <img src="../assets/IMG-20240924-WA0041 1.jpg" alt="Imagem 5" class="img-fluid img-retangular" />
-          </div>
-          <div class="col-md-4">
-            <img src="../assets/IMG-20240924-WA0036.jpg" alt="Imagem 6" class="img-fluid img-quadrado" />
-          </div>
-      
-          <!-- Quarta fileira: Quadrado + Retangular -->
-          <div class="col-md-4">
-            <img src="../assets/IMG-20240924-WA0040.jpg" alt="Imagem 7" class="img-fluid img-quadrado" />
-          </div>
-          <div class="col-md-8">
-            <img src="../assets/IMG-20240924-WA0043 1.jpg" alt="Imagem 8" class="img-fluid img-retangular" />
-          </div>
+    <div style="margin-left: 260px">
+      <h2 style="font-family: 'Inder', sans-serif">Obras</h2>
+    </div>
+
+    <div class="container mb-5">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <img
+            src="../assets/IMG-20240924-WA0051 1.jpg"
+            alt="Imagem 1"
+            class="img-fluid img-retangular"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="../assets/IMG-20240924-WA0037 1.jpg"
+            alt="Imagem 2"
+            class="img-fluid img-quadrado"
+          />
+        </div>
+
+        <div class="col-md-4">
+          <img
+            src="../assets/imagem2Leonardo Valencia.jpg"
+            alt="Imagem 3"
+            class="img-fluid img-quadrado"
+          />
+        </div>
+        <div class="col-md-8">
+          <img
+            src="../assets/IMG-20240924-WA0050 1.jpg"
+            alt="Imagem 4"
+            class="img-fluid img-retangular"
+            style="margin-left: 100px"
+          />
+        </div>
+
+        <div class="col-md-8">
+          <img
+            src="../assets/IMG-20240924-WA0041 1.jpg"
+            alt="Imagem 5"
+            class="img-fluid img-retangular"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="../assets/IMG-20240924-WA0036.jpg"
+            alt="Imagem 6"
+            class="img-fluid img-quadrado"
+          />
+        </div>
+
+        <div class="col-md-4">
+          <img
+            src="../assets/IMG-20240924-WA0040.jpg"
+            alt="Imagem 7"
+            class="img-fluid img-quadrado"
+          />
+        </div>
+        <div class="col-md-8">
+          <img
+            src="../assets/IMG-20240924-WA0043 1.jpg"
+            alt="Imagem 8"
+            class="img-fluid img-retangular"
+            style="margin-left: 100px"
+          />
         </div>
       </div>
-      
-      <footer
+    </div>
+
+    <footer
       style="
         background-color: #d9d9d9;
         max-width: 1300px;
@@ -274,7 +281,7 @@
       <div class="container d-flex justify-content-between align-items-center">
         <div class="footer-logo" style="flex: 1">
           <img
-            src="assets/logoSiteSemFundo.png"
+            src="../assets/logoSiteSemFundo.png"
             alt="Logo Molduraria Cardinal"
             class="img-fluid"
             style="width: 190px; height: auto; margin-left: 30px"
@@ -301,7 +308,14 @@
             </div>
 
             <div class="footer-link-column me-5">
-              <h3 style="font-size: 1.25rem; margin: 20px 0; font-weight: bold">
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  margin: 20px 0;
+                  font-weight: bold;
+                  text-align: left;
+                "
+              >
                 Menu
               </h3>
               <ul
@@ -309,11 +323,24 @@
                 style="font-size: 1rem; text-align: left"
               >
                 <li style="margin-bottom: 10px">
-                  <a href="index.html">Início</a>
+                  <a href="../index.html">Início</a>
                 </li>
-                <li style="margin-bottom: 10px"><a href="#">Catálogo</a></li>
-                <li style="margin-bottom: 10px"><a href="#">Pintores</a></li>
-                <li style="margin-bottom: 10px"><a href="#">Vitrine</a></li>
+                <li style="margin-bottom: 10px">
+                  <a href="../html/catalogo.html">Catálogo</a>
+                </li>
+                <li style="margin-bottom: 10px">
+                  <a href="../html/artistaLeonardoValencia.html"
+                    >Leonardo Valencia</a
+                  >
+                </li>
+                <li style="margin-bottom: 10px">
+                  <a href="../html/artistaNubiaVillalobos.html"
+                    >Nubia Villalobos</a
+                  >
+                </li>
+                <li style="margin-bottom: 10px">
+                  <a href="../html/vitrine.html">Vitrine</a>
+                </li>
               </ul>
             </div>
 
@@ -376,7 +403,7 @@
             Voltar para o topo
           </a>
           <img
-            src="assets/setaParaCima.png"
+            src="../assets/setaParaCima.png"
             alt="seta para cima"
             style="width: 20px; height: auto"
           />

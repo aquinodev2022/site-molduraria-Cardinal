@@ -18,9 +18,9 @@
 
     <style>
       .imagem-fixa {
-        width: 100%; 
-        max-width: 220px; 
-        height: 220px; 
+        width: 100%;
+        max-width: 220px;
+        height: 220px;
         object-fit: cover;
         margin: 20px auto 0;
       }
@@ -29,9 +29,9 @@
         border: 1px solid #000;
         border-radius: 10px;
         text-align: center;
-        width: 90%; 
-        max-width: 280px; 
-        margin: 0 auto; 
+        width: 90%;
+        max-width: 280px;
+        margin: 0 auto;
       }
 
       .card p {
@@ -39,7 +39,7 @@
       }
 
       .col {
-        padding: 0 15px; 
+        padding: 0 15px;
       }
 
       .row {
@@ -93,7 +93,7 @@
       <hr class="custom-hr" style="width: 31%; margin-right: 160px" />
 
       <!-- Logo centralizada -->
-      <a href="index.html" style="position: absolute">
+      <a href="../index.html" style="position: absolute">
         <img
           src="../assets/logoSiteSemFundo.png"
           alt="Logo"
@@ -113,31 +113,43 @@
           <li class="nav-item mx-3">
             <a class="nav-link" href="../html/catalogo.html">Catálogo</a>
           </li>
-    
+
           <!-- Menu Suspenso para Pintores -->
           <li class="nav-item dropdown mx-3">
-            <a 
-              class="nav-link dropdown-toggle" 
-              href="#" 
-              id="navbarDropdown" 
-              role="button" 
-              data-bs-toggle="dropdown" 
-              aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
               Pintores
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="../html/artistaLeonardoValencia.html">Leonardo Valência</a></li>
-              <li><a class="dropdown-item" href="../html/artistaNubiaVillalobos.html">Nubia Villalobos</a></li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="../html/artistaLeonardoValencia.html"
+                  >Leonardo Valência</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item"
+                  href="../html/artistaNubiaVillalobos.html"
+                  >Nubia Villalobos</a
+                >
+              </li>
             </ul>
           </li>
-    
+
           <li class="nav-item mx-3">
             <a class="nav-link" href="./vitrine.html">Vitrine</a>
           </li>
         </ul>
       </div>
     </nav>
-    
 
     <footer
       style="
@@ -152,7 +164,7 @@
       <div class="container d-flex justify-content-between align-items-center">
         <div class="footer-logo" style="flex: 1">
           <img
-            src="assets/logoSiteSemFundo.png"
+            src="../assets/logoSiteSemFundo.png"
             alt="Logo Molduraria Cardinal"
             class="img-fluid"
             style="width: 190px; height: auto; margin-left: 30px"
@@ -179,7 +191,14 @@
             </div>
 
             <div class="footer-link-column me-5">
-              <h3 style="font-size: 1.25rem; margin: 20px 0; font-weight: bold">
+              <h3
+                style="
+                  font-size: 1.25rem;
+                  margin: 20px 0;
+                  font-weight: bold;
+                  text-align: left;
+                "
+              >
                 Menu
               </h3>
               <ul
@@ -187,11 +206,24 @@
                 style="font-size: 1rem; text-align: left"
               >
                 <li style="margin-bottom: 10px">
-                  <a href="index.html">Início</a>
+                  <a href="../index.html">Início</a>
                 </li>
-                <li style="margin-bottom: 10px"><a href="#">Catálogo</a></li>
-                <li style="margin-bottom: 10px"><a href="#">Pintores</a></li>
-                <li style="margin-bottom: 10px"><a href="#">Vitrine</a></li>
+                <li style="margin-bottom: 10px">
+                  <a href="../html/catalogo.html">Catálogo</a>
+                </li>
+                <li style="margin-bottom: 10px">
+                  <a href="../html/artistaLeonardoValencia.html"
+                    >Leonardo Valencia</a
+                  >
+                </li>
+                <li style="margin-bottom: 10px">
+                  <a href="../html/artistaNubiaVillalobos.html"
+                    >Nubia Villalobos</a
+                  >
+                </li>
+                <li style="margin-bottom: 10px">
+                  <a href="../html/vitrine.html">Vitrine</a>
+                </li>
               </ul>
             </div>
 
@@ -254,15 +286,13 @@
             Voltar para o topo
           </a>
           <img
-            src="assets/setaParaCima.png"
+            src="../assets/setaParaCima.png"
             alt="seta para cima"
             style="width: 20px; height: auto"
           />
         </div>
       </div>
     </footer>
-
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../index.js"></script>
