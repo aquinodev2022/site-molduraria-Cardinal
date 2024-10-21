@@ -3,7 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Molduraria - Nubia Villalobos</title>
+    <title>Molduraria - Leonardo Valencia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inder&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="shortcut icon"
       href="../assets/logoSite.jpg"
@@ -17,38 +23,48 @@
     <link rel="stylesheet" href="../style/reset.css" />
 
     <style>
-      .imagem-fixa {
-        width: 100%;
-        max-width: 220px;
-        height: 220px;
+      .imagem-banner {
+        width: 72%;
+        height: 400px;
         object-fit: cover;
-        margin: 20px auto 0;
+        margin-bottom: 30px;
       }
 
-      .card {
-        border: 1px solid #000;
-        border-radius: 10px;
-        text-align: center;
-        width: 90%;
-        max-width: 280px;
+      .sobre-mim {
+        padding: 50px;
+      }
+
+      .sobre-mim h2 {
+        font-family: "Inder", sans-serif;
+      }
+
+      .sobre-mim p {
+        font-size: 1.1rem;
+        font-family: "Inder", sans-serif;
+      }
+
+      .img-retangular {
+        height: 300px;
+        width: calc(100% - 100px);
+        margin: 20px 20px;
+      }
+
+      .img-quadrado {
+        height: 300px;
+        width: calc(90% - 18px);
+        aspect-ratio: 1 / 1;
+        margin: 10px 20px;
+      }
+
+      .container {
+        max-width: 1420px;
         margin: 0 auto;
-      }
-
-      .card p {
-        font-weight: bold;
-      }
-
-      .col {
-        padding: 0 15px;
-      }
-
-      .row {
-        justify-content: center;
+        padding: 0 30px;
       }
     </style>
   </head>
 
-  <body>
+  <body id="inicioPagina">
     <nav class="navbar">
       <div class="container d-flex align-items-center">
         <div class="d-flex align-items-center">
@@ -91,8 +107,6 @@
       style="margin: 30px 0; position: relative"
     >
       <hr class="custom-hr" style="width: 31%; margin-right: 160px" />
-
-      <!-- Logo centralizada -->
       <a href="../index.html" style="position: absolute">
         <img
           src="../assets/logoSiteSemFundo.png"
@@ -100,7 +114,6 @@
           style="height: 150px; margin-bottom: 50px"
         />
       </a>
-
       <hr class="custom-hr" style="width: 31%; margin-right: 10px" />
     </div>
 
@@ -113,8 +126,6 @@
           <li class="nav-item mx-3">
             <a class="nav-link" href="../html/catalogo.html">Catálogo</a>
           </li>
-
-          <!-- Menu Suspenso para Pintores -->
           <li class="nav-item dropdown mx-3">
             <a
               class="nav-link dropdown-toggle"
@@ -143,13 +154,132 @@
               </li>
             </ul>
           </li>
-
           <li class="nav-item mx-3">
             <a class="nav-link" href="./vitrine.html">Vitrine</a>
           </li>
         </ul>
       </div>
     </nav>
+
+    <div class="d-flex justify-content-center">
+      <img
+        src="../assets/Group 96.jpg"
+        alt="Banner"
+        class="imagem-banner my-3"
+      />
+    </div>
+
+    <div class="container sobre-mim my-4">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Sobre a Pintora</h2>
+        </div>
+        <div class="col-md-6">
+          <p>
+            Núbia Villalobos é uma pintora apaixonada por transformar
+            sentimentos e histórias em arte. Desde jovem, encontrou nas cores
+            uma forma de se expressar além das palavras, inspirando-se na
+            natureza, cultura e pessoas ao seu redor. Sua arte é reconhecida
+            pela autenticidade e profundidade emocional, conectando espectadores
+            por meio de experiências visuais ricas. <br />
+            <br />
+            Ela já participou de exposições locais e internacionais, sendo
+            elogiada por criar obras "vivas" e "honestas". Núbia busca constante
+            aprendizado e experimentação, explorando temas variados, do real ao
+            abstrato. Pintar é uma necessidade vital para ela, e cada tela é um
+            novo desafio. Seu maior prazer está em ver suas obras se conectarem
+            com outras pessoas, deixando uma marca emocional no mundo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <hr style="width: 72%; margin: 0 auto" class="my-5" />
+
+    <div style="margin-left: 375px">
+      <h2 style="font-family: 'Inder', sans-serif">Obras</h2>
+    </div>
+
+    <div class="container mb-5">
+      <div class="row g-0">
+        <div class="col-md-8">
+          <img
+            src="../assets/IMG-20241019-WA0071 1.jpg"
+            alt="Imagem 1"
+            class="img-fluid img-retangular"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="../assets/IMG-20240924-WA0054 1.jpg"
+            alt="Imagem 2"
+            class="img-fluid img-quadrado"
+          />
+        </div>
+
+        <div class="col-md-4">
+          <img
+            src="../assets/IMG-20241019-WA0063.jpg"
+            alt="Imagem 3"
+            class="img-fluid img-quadrado"
+          />
+        </div>
+        
+
+        <div class="col-md-8">
+          <img
+            src="../assets/IMG-20240924-WA0055 1.jpg"
+            alt="Imagem 4"
+            class="img-fluid img-retangular"
+            style="width: calc(100% - 63px);"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <img
+            src="../assets/IMG-20241019-WA0067 (1).jpg"
+            alt="Imagem 5"
+            class="img-fluid img-quadrado"
+          />
+        </div>
+
+        
+        <div class="col-md-4">
+          <img
+            src="../assets/IMG-20240924-WA0053 1.jpg"
+            alt="Imagem 6"
+            class="img-fluid img-quadrado"
+            style="margin-left: 50px;"
+          />
+        </div>
+
+        
+
+        <div class="col-md-4">
+          <img
+            src="../assets/IMG-20241019-WA0065 (2) 1.jpg"
+            alt="Imagem 7"
+            class="img-fluid img-quadrado"
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="../assets/imagem1Nubia Villalobos.jpg"
+            alt="Imagem 8"
+            class="img-fluid img-quadrado"
+            style=" width: calc(100% - 63px);"
+
+          />
+        </div>
+        <div class="col-md-4">
+          <img
+            src="../assets/IMG-20240924-WA0054.jpg"
+            alt="Imagem 8"
+            class="img-fluid img-quadrado"
+          />
+        </div>
+      </div>
+    </div>
 
     <footer
       style="
