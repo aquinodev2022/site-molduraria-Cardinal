@@ -1,6 +1,6 @@
+/* Menu de navegação superior */
 .navbar {
-  margin-top: 65px
-}
+  margin: 60px 0 15px 0}
 
 .navbar-nav .nav-link {
   font-weight: bold;
@@ -25,6 +25,35 @@
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
+
+.icone-nav {
+  height: 40px;
+  margin-right: 35px;
+}
+
+.card-linha-logo {
+  margin: 30px 0;
+  position: relative;
+}
+
+.card-linha-logo a {
+  position: absolute;
+}
+
+.card-linha-logo img {
+  height: 150px;
+}
+
+.linha-nav-esquerda {
+  width: 31%;
+  margin-right: 160px;
+}
+
+.linha-nav-direita {
+  width: 31%;
+}
+
+/* Carrosel superior com  3 imagens em slide */
 
 #carouselExampleIndicators {
   width: 100%;
@@ -60,29 +89,19 @@
   margin-left: 100px;
 }
 
-hr {
-  height: 1px; 
-  background-color: black !important; 
-  opacity: 1; 
-  margin: 20px 0; 
-}
-
-.custom-hr {
-  border: 1px solid black;
-  width: 25%; 
-}
+/* Botão WhatsAap */
 
 .whatsapp-button {
   position: fixed;
-  bottom: 150px; 
-  right: 40px; 
+  bottom: 150px;
+  right: 40px;
   z-index: 1000;
   display: flex;
   align-items: center;
-  background-color: #25d366; 
+  background-color: #25d366;
   border-radius: 50px;
-  padding: 10px 20px; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   text-decoration: none;
 }
 
@@ -92,10 +111,10 @@ hr {
 }
 
 .line-icon {
-  width: 2px; 
-  height: 40px; 
-  margin: 0 10px; 
-  background-color: #fff; 
+  width: 2px;
+  height: 40px;
+  margin: 0 10px;
+  background-color: #fff;
 }
 
 .whatsapp-text {
@@ -105,8 +124,58 @@ hr {
   white-space: nowrap;
 }
 
-section h2 {
-  font-weight: bold;
+/* Serviços */
+
+.services-section {
+  padding: 40px 0;
+}
+
+.card-title {
+  margin-bottom: 15px;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.card-servicos {
+  min-width: 310px;
+  border: 1px solid black;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-servicos img {
+  width: 80px;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 300px;
+}
+
+.card-historia p {
+  font-family: "Inder, arial";
+}
+
+/* Vantagens da consultoria */
+
+.card-consultoria-imagem {
+  height: 360px;
+  width: 1300px;
+  background-size: cover;
+  background-image: url("assets/imagemIlustrativaMoldura4.svg");
+}
+
+.card-vantagens-consultoria {
+  background-color: #d9d9d9;
+  padding: 30px 40px;
+  width: 35%;
+}
+
+.card-vantagens-consultoria h3 {
+  color: black;
 }
 
 /* Localização - página inicial */
@@ -116,4 +185,55 @@ section h2 {
 
 .mapaIframe h2 {
   font-size: 2.5rem;
+}
+
+/* Footer */
+
+footer {
+  background-color: #d9d9d9;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-logo img {
+  width: 300px;
+  height: auto;
+}
+
+.footer-content {
+  flex: 2;
+}
+
+footer-content h1 {
+  font-size: 2.5rem;
+}
+
+.footer-link-coluna h3 {
+  font-size: 1.25rem;
+  margin: 20px 0;
+}
+
+footer hr {
+  width: 96%;
+  margin: 0 auto;
+}
+
+hr {
+  height: 1px;
+  background-color: black !important;
+  opacity: 1;
+}
+
+.footer-outros {
+  padding: 0 20px;
+}
+
+.footer-outros img {
+  width: 20px;
+  height: auto;
 }

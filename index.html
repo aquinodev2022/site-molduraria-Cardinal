@@ -22,9 +22,9 @@
             target="_blank"
           >
             <img
-              src="assets/instagramIcone.jpg"
+              src="../assets/instagramIcone.jpg"
               alt="Instagram"
-              style="height: 40px; margin-right: 35px"
+              class="icone-nav"
             />
           </a>
           <a
@@ -32,9 +32,9 @@
             target="_blank"
           >
             <img
-              src="assets/facebookIcone.jpg"
+              src="../assets/facebookIcone.jpg"
               alt="Facebook"
-              style="height: 40px; margin-right: 35px"
+              class="icone-nav"
             />
           </a>
           <a
@@ -42,9 +42,9 @@
             target="_blank"
           >
             <img
-              src="assets/whatsappIcone.jpg"
+              src="../assets/whatsappIcone.jpg"
               alt="Whatsapp"
-              style="height: 40px; margin-right: 35px"
+              class="icone-nav"
             />
           </a>
         </div>
@@ -52,31 +52,30 @@
     </nav>
 
     <div
-      class="d-flex justify-content-center align-items-center"
-      style="margin: 30px 0; position: relative"
+      class="card-linha-logo d-flex justify-content-center align-items-center"
     >
-      <hr class="custom-hr" style="width: 31%; margin-right: 160px" />
+      <hr class="linha-nav-esquerda" />
 
       <!-- Logo centralizada -->
-      <a href="index.html" style="position: absolute">
+      <a href="../index.html">
         <img
-          src="assets/logoSiteSemFundo.png"
-          alt="Logo"
-          style="height: 150px; margin-bottom: 50px"
+          src="../assets/logoSiteSemFundo.png"
+          alt="Logo da Molduraria Cardinal"
+          class="mb-5"
         />
       </a>
 
-      <hr class="custom-hr" style="width: 31%; margin-right: 10px" />
+      <hr class="linha-nav-direita" />
     </div>
 
-    <nav class="navbar navbar-expand-lg" style="margin: 50px 0 15px 0">
+    <nav class="navbar navbar-expand-lg">
       <div class="container d-flex justify-content-center">
         <ul class="navbar-nav">
           <li class="nav-item mx-3">
-            <a class="nav-link" href="index.html">Início</a>
+            <a class="nav-link" href="../index.html">Início</a>
           </li>
           <li class="nav-item mx-3">
-            <a class="nav-link" href="html/catalogo.html">Catálogo</a>
+            <a class="nav-link" href="../html/catalogo.html">Catálogo</a>
           </li>
 
           <!-- Menu Suspenso para Pintores -->
@@ -95,12 +94,14 @@
               <li>
                 <a
                   class="dropdown-item"
-                  href="html/artistaLeonardoValencia.html"
+                  href="../html/artistaLeonardoValencia.html"
                   >Leonardo Valencia</a
                 >
               </li>
               <li>
-                <a class="dropdown-item" href="html/artistaNubiaVillalobos.html"
+                <a
+                  class="dropdown-item"
+                  href="../html/artistaNubiaVillalobos.html"
                   >Nubia Villalobos</a
                 >
               </li>
@@ -108,12 +109,13 @@
           </li>
 
           <li class="nav-item mx-3">
-            <a class="nav-link" href="html/vitrine.html">Vitrine</a>
+            <a class="nav-link" href="../html/vitrine.html">Vitrine</a>
           </li>
         </ul>
       </div>
     </nav>
 
+    <!-- botão WhatsApp -->
     <a
       href="https://wa.me/558171181482"
       target="_blank"
@@ -128,7 +130,7 @@
       <span class="whatsapp-text">Consultoria grátis</span>
     </a>
 
-    <div
+    <section
       id="carouselExampleIndicators"
       class="carousel slide"
       data-bs-ride="carousel"
@@ -160,30 +162,32 @@
         <div class="carousel-item active">
           <img
             src="assets/imagemIlustrativaMoldura1.jpg"
-            class="d-block"
+            class="d-block w-100"
             alt="Quadro 1"
           />
         </div>
         <div class="carousel-item">
           <img
             src="assets/imagemIlustrativaMoldura2.jpg"
-            class="d-block"
+            class="d-block w-100"
             alt="Quadro 2"
           />
         </div>
         <div class="carousel-item">
           <img
             src="assets/imagemIlustrativaMoldura3.jpg"
-            class="d-block"
+            class="d-block w-100"
             alt="Quadro 3"
           />
         </div>
       </div>
+
       <button
         class="carousel-control-prev"
         type="button"
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev"
+        aria-label="Previous"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       </button>
@@ -192,48 +196,21 @@
         type="button"
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next"
+        aria-label="Next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
       </button>
-    </div>
+    </section>
 
-    <section class="services-section text-center" style="padding: 40px 0">
-      <h2 style="margin-bottom: 40px">Serviços</h2>
-      <div class="row justify-content-center" style="margin-right: 0px">
+    <section class="services-section text-center">
+      <h2 class="mb-4 fw-bold">Serviços</h2>
+      <div class="row justify-content-center">
         <!-- Card 1 -->
         <div class="col-md-2 mb-4 me-4">
-          <div
-            class="card p-3"
-            style="
-              min-width: 310px;
-              border: 1px solid black;
-              height: 300px;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            "
-          >
-            <h3
-              class="card-title"
-              style="
-                margin-bottom: 15px;
-                height: 40px; /* Garantir altura consistente */
-                overflow: hidden;
-                white-space: nowrap;
-              "
-            >
-              Molduras de pinturas
-            </h3>
-            <img
-              src="assets/molduraIcone.png"
-              alt="Molduras"
-              class="card-img-top"
-              style="width: 80px; margin-bottom: 25px"
-            />
-            <p
-              class="card-text"
-              style="text-align: left; font-weight: bold; margin: 0"
-            >
+          <div class="card card-servicos p-3">
+            <h3 class="card-title mb-3">Molduras de pinturas</h3>
+            <img src="assets/molduraIcone.png" alt="Molduras" class="mb-4" />
+            <p class="card-text fw-bold text-start">
               Personalizamos molduras de pinturas com diferentes estilos e
               materiais.
             </p>
@@ -241,39 +218,11 @@
         </div>
 
         <!-- Card 2 -->
-        <div class="col-md-2 me-1">
-          <div
-            class="card p-3"
-            style="
-              max-width: 310px;
-              border: 1px solid black;
-              height: 300px;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            "
-          >
-            <h3
-              class="card-title"
-              style="
-                margin-bottom: 15px;
-                height: 40px;
-                overflow: hidden;
-                white-space: nowrap;
-              "
-            >
-              Pinturas
-            </h3>
-            <img
-              src="assets/pinturaIcone.jpg"
-              alt="Pinturas"
-              class="card-img-top"
-              style="width: 80px; margin-bottom: 25px"
-            />
-            <p
-              class="card-text"
-              style="text-align: left; font-weight: bold; margin: 0"
-            >
+        <div class="col-md-2 me-4">
+          <div class="card card-servicos p-3">
+            <h3 class="card-title mb-3">Pinturas</h3>
+            <img src="assets/pinturaIcone.jpg" alt="Pinturas" class="mb-4" />
+            <p class="card-text fw-bold text-start">
               Oferecemos uma variedade de pinturas decorativas para todos os
               gostos.
             </p>
@@ -281,39 +230,11 @@
         </div>
 
         <!-- Card 3 -->
-        <div class="col-md-2 mb-4 me-1">
-          <div
-            class="card p-3"
-            style="
-              max-width: 310px;
-              border: 1px solid black;
-              height: 300px;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            "
-          >
-            <h3
-              class="card-title"
-              style="
-                margin-bottom: 15px;
-                height: 40px;
-                overflow: hidden;
-                white-space: nowrap;
-              "
-            >
-              Espelhos
-            </h3>
-            <img
-              src="assets/espelhoIcone.png"
-              alt="Espelhos"
-              class="card-img-top"
-              style="width: 80px; margin-bottom: 25px"
-            />
-            <p
-              class="card-text"
-              style="text-align: left; font-weight: bold; margin: 0"
-            >
+        <div class="col-md-2 mb-4 me-4">
+          <div class="card card-servicos p-3">
+            <h3 class="card-title mb-3">Espelhos</h3>
+            <img src="assets/espelhoIcone.png" alt="Espelhos" class="mb-4" />
+            <p class="card-text fw-bold text-start">
               Criamos molduras sob medida para espelhos de diferentes tamanhos e
               formatos.
             </p>
@@ -322,38 +243,14 @@
 
         <!-- Card 4 -->
         <div class="col-md-2 mb-4 me-4">
-          <div
-            class="card p-3"
-            style="
-              min-width: 330px;
-              border: 1px solid black;
-              height: 300px;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-            "
-          >
-            <h3
-              class="card-title"
-              style="
-                margin-bottom: 15px;
-                height: 40px;
-                overflow: hidden;
-                white-space: nowrap;
-              "
-            >
-              Molduras de espelhos
-            </h3>
+          <div class="card card-servicos p-3">
+            <h3 class="card-title mb-3">Molduras de espelhos</h3>
             <img
               src="assets/molduraEspelho.jpg"
               alt="Personalização"
-              class="card-img-top"
-              style="width: 80px; margin-bottom: 25px"
+              class="mb-4"
             />
-            <p
-              class="card-text"
-              style="text-align: left; font-weight: bold; margin: 0"
-            >
+            <p class="card-text fw-bold text-start">
               Espelhos decorativos para qualquer ambiente, com várias opções de
               estilo.
             </p>
@@ -362,129 +259,64 @@
       </div>
     </section>
 
-    <section class="new-items-section text-center">
-      <h2>Novos Itens</h2>
-      <p style="font-size: 1.2rem">Nossos últimos trabalhos realizados</p>
+    <section class="text-center">
+      <h2 class="fw-bold">Novos Itens</h2>
+      <p class="fs-6">Nossos últimos trabalhos realizados</p>
 
       <div class="container mt-4">
         <div class="row d-flex justify-content-center">
           <!-- Card 1 -->
           <div class="col-md-4 mb-4">
-            <div style="border-radius: 5px">
-              <img
-                src="assets/molduraRecente.jpg"
-                class="card-img-top"
-                alt="Novo Item 1"
-                style="border-radius: 20px; object-fit: cover; height: 300px"
-              />
-            </div>
+            <img
+              src="assets/molduraRecente.jpg"
+              class="card-img-top rounded-4"
+              alt="Novo Item 1"
+            />
           </div>
 
           <!-- Card 2 -->
           <div class="col-md-4 mb-4">
-            <div style="border-radius: 5px">
-              <img
-                src="assets/molduraRecente2.jpg"
-                class="card-img-top"
-                alt="Novo Item 2"
-                style="border-radius: 20px; object-fit: cover; height: 300px"
-              />
-            </div>
+            <img
+              src="assets/molduraRecente2.jpg"
+              class="card-img-top rounded-4"
+              alt="Novo Item 2"
+            />
           </div>
 
           <!-- Card 3 -->
           <div class="col-md-4 mb-4">
-            <div style="border-radius: 5px">
-              <img
-                src="assets/molduraRecente3.jpg"
-                class="card-img-top"
-                alt="Novo Item 3"
-                style="border-radius: 20px; object-fit: cover; height: 300px"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      
-    </section>
-
-
-
-
-    <section
-      style="
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 60px;
-      "
-    >
-      <div
-        class="d-flex align-items-center"
-        style="
-          background-image: url('assets/imagemIlustrativaMoldura4.svg');
-          height: 360px;
-          width: 1300px;
-          margin-bottom: 70px;
-          background-repeat: no-repeat;
-          background-size: cover;
-        "
-      >
-        <div
-          class="card-body"
-          style="
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            margin-left: 15px;
-          "
-        >
-          <div
-            style="
-              background-color: #d9d9d9;
-              padding: 30px 40px;
-              border-radius: 10px;
-              text-align: center;
-              width: 35%;
-            "
-          >
-            <h3 class="card-title mb-3" style="color: black; font-size: 28px">
-              Vantagens da Consultoria
-            </h3>
-            <p
-              class="card-text"
-              style="color: black; font-size: 20px; margin-bottom: 10px"
-            >
-              ✔️ Aumento na eficiência dos processos
-            </p>
-            <p
-              class="card-text"
-              style="color: black; font-size: 20px; margin-bottom: 10px"
-            >
-              ✔️ Redução de custos operacionais
-            </p>
-            <p class="card-text" style="color: black; font-size: 20px">
-              ✔️ Melhor atendimento ao cliente
-            </p>
+            <img
+              src="assets/molduraRecente3.jpg"
+              class="card-img-top rounded-4"
+              alt="Novo Item 3"
+            />
           </div>
         </div>
       </div>
     </section>
 
-
-   
+    <section class="d-flex justify-content-center align-items-center my-4">
+      <div class="card-consultoria-imagem d-flex align-items-center mb-5">
+        <div class="ms-5 card-vantagens-consultoria rounded-2">
+          <h3 class="mb-3 fs-3">Vantagens da Consultoria</h3>
+          <p class="card-text text-black fs-5 mb-2">
+            ✔️ Aumento na eficiência dos processos
+          </p>
+          <p class="card-text text-black fs-5 mb-2">
+            ✔️ Redução de custos operacionais
+          </p>
+          <p class="card-text text-black fs-5">
+            ✔️ Melhor atendimento ao cliente
+          </p>
+        </div>
+      </div>
+    </section>
 
     <div class="container">
-      <h2 class="text-center mb-5 fw-bold" style="font-size: 2.5rem">
-        História
-      </h2>
+      <h2 class="text-center mb-5 fw-bold fs-1">História</h2>
       <div class="row">
-        <div class="col-md-7 ms-4">
-          <p style="font-family: 'Inder, arial'; font-size: 1.5rem">
+        <div class="card-historia col-md-7 ms-4">
+          <p class="fs-4">
             Somos um empreendimento familiar nascido no ano 2005. Fundado pelos
             artistas plásticos Leonardo e Carolina, com o intuito de moldurar
             suas obras com montagens diferentes, criativos e inovadores. <br />
@@ -500,132 +332,87 @@
           </p>
         </div>
 
-        <div class="col-md-4 mb-4 ms-5" style="border-radius: 5px">
+        <div class="col-md-4 mb-4 ms-5">
           <img
             src="assets/molduraRecente6.jpg"
-            class="card-img-top"
-            alt="Novo Item 2"
-            style="border-radius: 20px; object-fit: cover; height: 300px"
+            class="card-img-top rounded-4 my-3"
+            alt="quadro feito pela molduraria Cardinal"
           />
         </div>
       </div>
     </div>
 
-    <section class="mapaIframe">
-      <div class="container">
-        <h2 class="text-center mb-5">Localização</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.592232270024!2d-34.9405587!3d-8.040906800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19dd3ee40af5%3A0x31ccdbc34b045af6!2sMolduraria%20Cardinal!5e0!3m2!1spt-BR!2sbr!4v1725888021304!5m2!1spt-BR!2sbr"
-          width="100%"
-          height="600"
-          style="margin-bottom: 60px"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        >
-        </iframe>
-      </div>
+    <section class="mapaIframe w-75 mx-auto">
+      <h2 class="text-center mb-5 fw-bold">Localização</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.592232270024!2d-34.9405587!3d-8.040906800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab19dd3ee40af5%3A0x31ccdbc34b045af6!2sMolduraria%20Cardinal!5e0!3m2!1spt-BR!2sbr!4v1725888021304!5m2!1spt-BR!2sbr"
+        width="92%"
+        height="600"
+        class="d-block mx-auto"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
     </section>
 
-    <footer
-      style="
-        background-color: #d9d9d9;
-        max-width: 1300px;
-        margin: 0 auto;
-        padding: 20px 0;
-        margin-bottom: 50px;
-        font-weight: bold;
-      "
-    >
+    <footer class="fw-bold mb-5 my-5">
       <div class="container d-flex justify-content-between align-items-center">
-        <div class="footer-logo" style="flex: 1">
+        <div class="footer-logo">
           <img
-            src="assets/logoSiteSemFundo.png"
+            src="../assets/logoSiteSemFundo.png"
             alt="Logo Molduraria Cardinal"
-            class="img-fluid"
-            style="width: 300px; height: auto; margin-left: 30px"
+            class="ms-4"
           />
         </div>
 
-        <div class="footer-content text-center" style="flex: 2">
-          <h1 style="font-weight: bold; font-size: 2.5rem; margin-top: 15px">
-            Molduraria Cardinal
-          </h1>
+        <div class="footer-content text-center">
+          <h1 class="fw-bold my-3">Molduraria Cardinal</h1>
 
           <div class="footer-links d-flex justify-content-center mt-3">
-            <div class="footer-link-column me-5">
-              <h3 style="font-size: 1.25rem; margin: 20px 0; font-weight: bold">
-                Sobre nós
-              </h3>
-              <ul
-                class="list-unstyled"
-                style="font-size: 1rem; text-align: left"
-              >
-                <li style="margin-bottom: 10px"><a href="#">História</a></li>
-                <li style="margin-bottom: 10px"><a href="#">Time</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-link-column me-5">
-              <h3
-                style="
-                  font-size: 1.25rem;
-                  margin: 20px 0;
-                  font-weight: bold;
-                  text-align: left;
-                "
-              >
-                Menu
-              </h3>
-              <ul
-                class="list-unstyled"
-                style="font-size: 1rem; text-align: left"
-              >
-                <li style="margin-bottom: 10px">
-                  <a href="index.html">Início</a>
+            <div class="footer-link-coluna me-5">
+              <h3 class="fw-bold text-start">Menu</h3>
+              <ul class="list-unstyled fs-6 text-start">
+                <li class="mb-3">
+                  <a href="../index.html">Início</a>
                 </li>
-                <li style="margin-bottom: 10px">
-                  <a href="html/catalogo.html">Catálogo</a>
+                <li class="mb-3">
+                  <a href="../html/catalogo.html">Catálogo</a>
                 </li>
-                <li style="margin-bottom: 10px">
-                  <a href="html/artistaLeonardoValencia.html"
+                <li class="mb-3">
+                  <a href="../html/artistaLeonardoValencia.html"
                     >Leonardo Valencia</a
                   >
                 </li>
-                <li style="margin-bottom: 10px">
-                  <a href="html/artistaNubiaVillalobos.html"
+                <li class="mb-3">
+                  <a href="../html/artistaNubiaVillalobos.html"
                     >Nubia Villalobos</a
                   >
                 </li>
-                <li style="margin-bottom: 10px">
-                  <a href="html/vitrine.html">Vitrine</a>
+                <li class="mb-3">
+                  <a href="../html/vitrine.html">Vitrine</a>
                 </li>
               </ul>
             </div>
 
-            <div class="footer-link-column">
-              <h3 style="font-size: 1.25rem; margin: 20px 0; font-weight: bold">
-                Rede social
-              </h3>
-              <ul
-                class="list-unstyled"
-                style="font-size: 1rem; text-align: left"
-              >
-                <li style="margin-bottom: 10px">
+            <div class="footer-link-coluna">
+              <h3 class="fw-bold">Rede social</h3>
+              <ul class="list-unstyled fs-6 text-start">
+                <li class="mb-3">
                   <a
                     href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr"
                     target="_blank"
                     >Instagram</a
                   >
                 </li>
-                <li style="margin-bottom: 10px">
+                <li class="mb-3">
                   <a
                     href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web"
                     target="_blank"
                     >Facebook</a
                   >
                 </li>
-                <li style="margin-bottom: 10px">
+                <li class="mb-3">
                   <a
                     href="https://api.whatsapp.com/send/?phone=558171181482&text&type=phone_number&app_absent=0"
                     target="_blank"
@@ -638,34 +425,20 @@
         </div>
       </div>
 
-      <hr class="my-4" style="width: 96%; margin: 0 auto" />
+      <hr class="my-4" />
 
       <div
-        class="footer-bottom d-flex justify-content-between align-items-center"
-        style="padding: 0 20px"
+        class="footer-outros d-flex justify-content-between align-items-center"
       >
-        <p class="mb-0" style="font-weight: bold; margin-left: 30px">
+        <p class="mb-0 fw-bold ms-4">
           &copy; 2024 Molduraria Cardinal. Todos os direitos reservados.
         </p>
-        <a
-          href="#"
-          class="text-decoration-none"
-          style="margin-right: 250px; font-weight: bold"
-          >Termos de Serviço</a
-        >
-        <div class="d-flex align-items-center" style="margin-right: 30px">
-          <a
-            href="#inicioPagina"
-            class="text-decoration-none me-2"
-            style="font-size: 1.4rem; font-weight: bold"
-          >
+        <a href="#" class="fw-bold me-5">Termos de Serviço</a>
+        <div class="d-flex align-items-center me-4">
+          <a href="#inicioPagina" class="me-2 fs-4 fw-bold">
             Voltar para o topo
           </a>
-          <img
-            src="assets/setaParaCima.png"
-            alt="seta para cima"
-            style="width: 20px; height: auto"
-          />
+          <img src="../assets/setaParaCima.png" alt="seta para cima" />
         </div>
       </div>
     </footer>

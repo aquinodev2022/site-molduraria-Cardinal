@@ -1,0 +1,48 @@
+.imagem-banner {
+  width: 72%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.sobre-mim {
+  padding: 50px;
+}
+
+.sobre-mim h2 {
+  font-family: "Inder", sans-serif;
+}
+
+.sobre-mim p {
+  font-size: 1.1rem;
+  font-family: "Inder", sans-serif;
+}
+
+.img-retangular {
+  height: 300px;
+  width: calc(100% - 100px);
+  margin: 20px 20px;
+}
+
+.img-quadrado {
+  height: 300px;
+  width: calc(90% - 18px);
+  aspect-ratio: 1 / 1;
+  margin: 10px 20px;
+}
+
+.container {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.divisoria-artista {
+  width: 72%;
+  margin: 0 auto;
+}
+
+hr + h2 {
+  font-family: "Inder", sans-serif;
+  margin-left: 275px;
+}

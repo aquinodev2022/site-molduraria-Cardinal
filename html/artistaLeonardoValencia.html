@@ -21,47 +21,8 @@
     />
     <link rel="stylesheet" href="../index.css" />
     <link rel="stylesheet" href="../style/reset.css" />
-
-    <style>
-      .imagem-banner {
-        width: 72%;
-        height: 400px;
-        object-fit: cover;
-        margin-bottom: 30px;
-      }
-
-      .sobre-mim {
-        padding: 50px;
-      }
-
-      .sobre-mim h2 {
-        font-family: "Inder", sans-serif;
-      }
-
-      .sobre-mim p {
-        font-size: 1.1rem;
-        font-family: "Inder", sans-serif;
-      }
-
-      .img-retangular {
-        height: 300px;
-        width: calc(100% - 100px);
-        margin: 20px 20px;
-      }
-
-      .img-quadrado {
-        height: 300px;
-        width: calc(90% - 18px);
-        aspect-ratio: 1 / 1;
-        margin: 10px 20px;
-      }
-
-      .container {
-        max-width: 1420px;
-        margin: 0 auto;
-        padding: 0 30px;
-      }
-    </style>
+    <link rel="stylesheet" href="../style/artistasPaginas.css" />
+    
   </head>
 
   <body id="inicioPagina">
@@ -75,7 +36,7 @@
             <img
               src="../assets/instagramIcone.jpg"
               alt="Instagram"
-              style="height: 40px; margin-right: 35px"
+              class="icone-nav"
             />
           </a>
           <a
@@ -85,7 +46,7 @@
             <img
               src="../assets/facebookIcone.jpg"
               alt="Facebook"
-              style="height: 40px; margin-right: 35px"
+              class="icone-nav"
             />
           </a>
           <a
@@ -95,7 +56,7 @@
             <img
               src="../assets/whatsappIcone.jpg"
               alt="Whatsapp"
-              style="height: 40px; margin-right: 35px"
+              class="icone-nav"
             />
           </a>
         </div>
@@ -103,21 +64,23 @@
     </nav>
 
     <div
-      class="d-flex justify-content-center align-items-center"
-      style="margin: 30px 0; position: relative"
+      class="card-linha-logo d-flex justify-content-center align-items-center"
     >
-      <hr class="custom-hr" style="width: 31%; margin-right: 160px" />
-      <a href="../index.html" style="position: absolute">
+      <hr class="linha-nav-esquerda" />
+
+      <!-- Logo centralizada -->
+      <a href="../index.html">
         <img
           src="../assets/logoSiteSemFundo.png"
-          alt="Logo"
-          style="height: 150px; margin-bottom: 50px"
+          alt="Logo da Molduraria Cardinal"
+          class="mb-5"
         />
       </a>
-      <hr class="custom-hr" style="width: 31%; margin-right: 10px" />
+
+      <hr class="linha-nav-direita" />
     </div>
 
-    <nav class="navbar navbar-expand-lg" style="margin: 50px 0 15px 0">
+    <nav class="navbar navbar-expand-lg">
       <div class="container d-flex justify-content-center">
         <ul class="navbar-nav">
           <li class="nav-item mx-3">
@@ -126,6 +89,8 @@
           <li class="nav-item mx-3">
             <a class="nav-link" href="../html/catalogo.html">Catálogo</a>
           </li>
+
+          <!-- Menu Suspenso para Pintores -->
           <li class="nav-item dropdown mx-3">
             <a
               class="nav-link dropdown-toggle"
@@ -140,22 +105,23 @@
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li>
                 <a
-                  class="dropdown-item fw-bold"
+                  class="dropdown-item"
                   href="../html/artistaLeonardoValencia.html"
-                  >Leonardo Valência</a
+                  >Leonardo Valencia</a
                 >
               </li>
               <li>
                 <a
-                  class="dropdown-item fw-bold"
+                  class="dropdown-item"
                   href="../html/artistaNubiaVillalobos.html"
                   >Nubia Villalobos</a
                 >
               </li>
             </ul>
           </li>
+
           <li class="nav-item mx-3">
-            <a class="nav-link" href="./vitrine.html">Vitrine</a>
+            <a class="nav-link" href="../html/vitrine.html">Vitrine</a>
           </li>
         </ul>
       </div>
@@ -164,7 +130,7 @@
     <div class="d-flex justify-content-center">
       <img
         src="../assets/imagemPintorLeonardo.jpg"
-        alt="Banner"
+        alt="Banner de Leonardo"
         class="imagem-banner my-3"
       />
     </div>
@@ -192,40 +158,38 @@
       </div>
     </div>
 
-    <hr style="width: 72%; margin: 0 auto" class="my-5" />
+    <hr class="divisoria-artista my-5" />
 
-    <div style="margin-left: 275px">
-      <h2 style="font-family: 'Inder', sans-serif">Obras</h2>
-    </div>
+    <h2>Obras</h2>
 
     <div class="container mb-5">
       <div class="row g-0">
         <div class="col-md-8">
           <img
             src="../assets/imagem8Leonardo Valencia.jpg"
-            alt="Imagem 1"
+            alt="Imagem de obra de arte de Leornado Valencia"
             class="img-fluid img-retangular"
           />
         </div>
         <div class="col-md-4">
           <img
             src="../assets/imagem9Leonardo Valencia.jpg"
-            alt="Imagem 2"
-            class="img-fluid img-quadrado"
+            alt="Imagem de obra de arte de Leornado Valencia"
+            class="Imagem de obra de arte de Leornado Valencia"
           />
         </div>
 
         <div class="col-md-4">
           <img
             src="../assets/imagem2Leonardo Valencia.jpg"
-            alt="Imagem 3"
-            class="img-fluid img-quadrado"
+            alt="Imagem de obra de arte de Leornado Valencia"
+            class="img-fluid img-quadrad"
           />
         </div>
         <div class="col-md-8">
           <img
             src="../assets/imagem10Leonardo Valencia.jpg"
-            alt="Imagem 4"
+            alt="Imagem de obra de arte de Leornado Valencia"
             class="img-fluid img-retangular"
             style="margin-left: 100px"
           />
@@ -234,14 +198,14 @@
         <div class="col-md-8">
           <img
             src="../assets/imagem11Leonardo Valencia.jpg"
-            alt="Imagem 5"
+            alt="Imagem de obra de arte de Leornado Valencia"
             class="img-fluid img-retangular"
           />
         </div>
         <div class="col-md-4">
           <img
             src="../assets/imagem12Leonardo Valencia.jpg"
-            alt="Imagem 6"
+            alt="Imagem de obra de arte de Leornado Valencia"
             class="img-fluid img-quadrado"
           />
         </div>
@@ -249,14 +213,14 @@
         <div class="col-md-4">
           <img
             src="../assets/imagem13Leonardo Valencia.jpg"
-            alt="Imagem 7"
+            alt="Imagem de obra de arte de Leornado Valencia"
             class="img-fluid img-quadrado"
           />
         </div>
         <div class="col-md-8">
           <img
             src="../assets/imagem14Leonardo Valencia.jpg"
-            alt="Imagem 8"
+            alt="Imagem de obra de arte de Leornado Valencia"
             class="img-fluid img-retangular"
             style="margin-left: 100px"
           />
@@ -264,105 +228,63 @@
       </div>
     </div>
 
-    <footer
-      style="
-        background-color: #d9d9d9;
-        max-width: 1300px;
-        margin: 0 auto;
-        padding: 20px 0;
-        margin-bottom: 50px;
-        font-weight: bold;
-      "
-    >
+    <footer class="fw-bold mb-5 my-5">
       <div class="container d-flex justify-content-between align-items-center">
-        <div class="footer-logo" style="flex: 1">
+        <div class="footer-logo">
           <img
             src="../assets/logoSiteSemFundo.png"
             alt="Logo Molduraria Cardinal"
-            class="img-fluid"
-            style="width: 300px; height: auto; margin-left: 30px"
+            class="ms-4"
           />
         </div>
 
-        <div class="footer-content text-center" style="flex: 2">
-          <h1 style="font-weight: bold; font-size: 2.5rem; margin-top: 15px">
-            Molduraria Cardinal
-          </h1>
+        <div class="footer-content text-center">
+          <h1 class="fw-bold my-3">Molduraria Cardinal</h1>
 
           <div class="footer-links d-flex justify-content-center mt-3">
-            <div class="footer-link-column me-5">
-              <h3 style="font-size: 1.25rem; margin: 20px 0; font-weight: bold">
-                Sobre nós
-              </h3>
-              <ul
-                class="list-unstyled"
-                style="font-size: 1rem; text-align: left"
-              >
-                <li style="margin-bottom: 10px"><a href="#">História</a></li>
-                <li style="margin-bottom: 10px"><a href="#">Time</a></li>
-              </ul>
-            </div>
-
-            <div class="footer-link-column me-5">
-              <h3
-                style="
-                  font-size: 1.25rem;
-                  margin: 20px 0;
-                  font-weight: bold;
-                  text-align: left;
-                "
-              >
-                Menu
-              </h3>
-              <ul
-                class="list-unstyled"
-                style="font-size: 1rem; text-align: left"
-              >
-                <li style="margin-bottom: 10px">
+            <div class="footer-link-coluna me-5">
+              <h3 class="fw-bold text-start">Menu</h3>
+              <ul class="list-unstyled fs-6 text-start">
+                <li class="mb-3">
                   <a href="../index.html">Início</a>
                 </li>
-                <li style="margin-bottom: 10px">
+                <li class="mb-3">
                   <a href="../html/catalogo.html">Catálogo</a>
                 </li>
-                <li style="margin-bottom: 10px">
+                <li class="mb-3">
                   <a href="../html/artistaLeonardoValencia.html"
                     >Leonardo Valencia</a
                   >
                 </li>
-                <li style="margin-bottom: 10px">
+                <li class="mb-3">
                   <a href="../html/artistaNubiaVillalobos.html"
                     >Nubia Villalobos</a
                   >
                 </li>
-                <li style="margin-bottom: 10px">
+                <li class="mb-3">
                   <a href="../html/vitrine.html">Vitrine</a>
                 </li>
               </ul>
             </div>
 
-            <div class="footer-link-column">
-              <h3 style="font-size: 1.25rem; margin: 20px 0; font-weight: bold">
-                Rede social
-              </h3>
-              <ul
-                class="list-unstyled"
-                style="font-size: 1rem; text-align: left"
-              >
-                <li style="margin-bottom: 10px">
+            <div class="footer-link-coluna">
+              <h3 class="fw-bold">Rede social</h3>
+              <ul class="list-unstyled fs-6 text-start">
+                <li class="mb-3">
                   <a
                     href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr"
                     target="_blank"
                     >Instagram</a
                   >
                 </li>
-                <li style="margin-bottom: 10px">
+                <li class="mb-3">
                   <a
                     href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web"
                     target="_blank"
                     >Facebook</a
                   >
                 </li>
-                <li style="margin-bottom: 10px">
+                <li class="mb-3">
                   <a
                     href="https://api.whatsapp.com/send/?phone=558171181482&text&type=phone_number&app_absent=0"
                     target="_blank"
@@ -375,34 +297,20 @@
         </div>
       </div>
 
-      <hr class="my-4" style="width: 96%; margin: 0 auto" />
+      <hr class="my-4" />
 
       <div
-        class="footer-bottom d-flex justify-content-between align-items-center"
-        style="padding: 0 20px"
+        class="footer-outros d-flex justify-content-between align-items-center"
       >
-        <p class="mb-0" style="font-weight: bold; margin-left: 30px">
+        <p class="mb-0 fw-bold ms-4">
           &copy; 2024 Molduraria Cardinal. Todos os direitos reservados.
         </p>
-        <a
-          href="#"
-          class="text-decoration-none"
-          style="margin-right: 250px; font-weight: bold"
-          >Termos de Serviço</a
-        >
-        <div class="d-flex align-items-center" style="margin-right: 30px">
-          <a
-            href="#inicioPagina"
-            class="text-decoration-none me-2"
-            style="font-size: 1.4rem; font-weight: bold"
-          >
+        <a href="#" class="fw-bold me-5">Termos de Serviço</a>
+        <div class="d-flex align-items-center me-4">
+          <a href="#inicioPagina" class="me-2 fs-4 fw-bold">
             Voltar para o topo
           </a>
-          <img
-            src="../assets/setaParaCima.png"
-            alt="seta para cima"
-            style="width: 20px; height: auto"
-          />
+          <img src="../assets/setaParaCima.png" alt="seta para cima" />
         </div>
       </div>
     </footer>
