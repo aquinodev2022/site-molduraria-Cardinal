@@ -2,9 +2,14 @@
   width: 72%;
   height: 400px;
   object-fit: cover;
-  margin-bottom: 30px;
 }
 
+@media (max-width: 576px) { 
+  .imagem-banner {
+    width: 95%; 
+    height: auto; 
+  }
+}
 .sobre-mim {
   padding: 50px;
 }
@@ -16,6 +21,19 @@
 .sobre-mim p {
   font-size: 1.1rem;
   font-family: "Inder", sans-serif;
+}
+
+@media (max-width: 576px) { 
+  
+  .sobre-mim h2 {
+    font-size: 1.3rem; 
+    text-align: center; 
+  }
+
+  .sobre-mim p {
+    font-size: 0.95rem; 
+    margin-top: 15px;
+  }
 }
 
 .img-retangular {
@@ -37,12 +55,51 @@
   padding: 0 30px;
 }
 
+@media (max-width: 576px) { 
+  .row.g-0 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .col-md-8, .col-md-4 {
+    width: 100% !important; 
+    margin-bottom: 20px;
+  }
+
+  .img-retangular, .img-quadrado {
+    width: 90%; 
+    height: auto; 
+    margin: 10px 0; 
+  }
+
+  .no-margin-responsivo {
+    margin-left: 0 !important;
+  }
+
+}
+
 .divisoria-artista {
   width: 72%;
   margin: 0 auto;
 }
 
+@media (max-width: 576px) { 
+  .divisoria-artista {
+    width: 85%;
+    margin-top: 10px !important; 
+    margin-bottom: 20px !important; 
+  }
+}
+
 hr + h2 {
   font-family: "Inder", sans-serif;
   margin-left: 275px;
+}
+
+@media (max-width: 576px) { 
+  hr + h2 {
+    margin-left: 0; 
+    text-align: center;
+  }
 }
