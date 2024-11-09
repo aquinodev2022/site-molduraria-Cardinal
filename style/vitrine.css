@@ -12,21 +12,28 @@ nav {
 
 .card {
   border: 1px solid #000;
-  border-radius: 10px;
   text-align: center;
   width: 90%; 
+  padding: 8px;
   max-width: 280px; 
   margin: 0 auto; 
+  border-radius:0 ;
 }
 
 .card p {
   font-weight: bold;
 }
 
-.col {
-  padding: 0 15px; 
-}
-
 .row {
   justify-content: center;
 }
+
+@media (max-width: 576px) {
+  .imagem-fixa {
+    margin: 0;
+  }
+  .card-body {
+    margin-top: 10px;
+    padding: 0 !important;
+  }
+ }
