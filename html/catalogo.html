@@ -19,9 +19,13 @@
   </head>
 
   <body id="inicioPagina">
-    <nav class="navbar">
-      <div class="container d-flex align-items-center">
-        <div class="d-flex align-items-center">
+    <!-- Navbar Desktop (visível em telas grandes) -->
+    <nav class="navbar navbar-expand-lg d-none d-lg-flex">
+      <div
+        class="container my-4 d-flex flex-column align-items-center justify-content-center"
+      >
+        <!-- Redes sociais no topo -->
+        <div class="d-flex justify-content-start" style="margin-right: 1050px">
           <a
             href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr"
             target="_blank"
@@ -53,37 +57,30 @@
             />
           </a>
         </div>
-      </div>
-    </nav>
 
-    <div
-      class="card-linha-logo d-flex justify-content-center align-items-center"
-    >
-      <hr class="linha-nav-esquerda" />
+        <!-- Logo e Linhas -->
+        <div
+          class="card-linha-logo d-flex align-items-center justify-content-center mb-4"
+        >
+          <hr class="linha-nav-esquerda" />
+          <a href="../index.html">
+            <img
+              src="../assets/logoSiteSemFundo.png"
+              alt="Logo da Molduraria Cardinal"
+              class="logo-nav"
+            />
+          </a>
+          <hr class="linha-nav-direita" />
+        </div>
 
-      <!-- Logo centralizada -->
-      <a href="../index.html">
-        <img
-          src="../assets/logoSiteSemFundo.png"
-          alt="Logo da Molduraria Cardinal"
-          class="mb-5"
-        />
-      </a>
-
-      <hr class="linha-nav-direita" />
-    </div>
-
-    <nav class="navbar navbar-expand-lg">
-      <div class="container d-flex justify-content-center">
-        <ul class="navbar-nav">
+        <!-- Menu -->
+        <ul class="navbar-nav d-flex justify-content-center">
           <li class="nav-item mx-3">
             <a class="nav-link" href="../index.html">Início</a>
           </li>
           <li class="nav-item mx-3">
             <a class="nav-link" href="../html/catalogo.html">Catálogo</a>
           </li>
-
-          <!-- Menu Suspenso para Pintores -->
           <li class="nav-item dropdown mx-3">
             <a
               class="nav-link dropdown-toggle"
@@ -92,9 +89,8 @@
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              >Pintores</a
             >
-              Pintores
-            </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li>
                 <a
@@ -112,11 +108,117 @@
               </li>
             </ul>
           </li>
-
           <li class="nav-item mx-3">
             <a class="nav-link" href="../html/vitrine.html">Vitrine</a>
           </li>
         </ul>
+      </div>
+    </nav>
+
+    <!-- Navbar Mobile (menu hamburguer) -->
+    <nav class="navbar navbar-expand-lg d-lg-none">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMobileContent"
+          aria-controls="navbarMobileContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMobileContent">
+          <!-- Logo e linhas visíveis no menu hamburguer -->
+          <div class="d-flex justify-content-center my-4">
+            <div class="card-linha-logo d-flex align-items-center">
+              <hr class="linha-nav-esquerda" />
+              <a href="../index.html">
+                <img
+                  src="../assets/logoSiteSemFundo.png"
+                  alt="Logo da Molduraria Cardinal"
+                  class="logo-nav"
+                />
+              </a>
+              <hr class="linha-nav-direita" />
+            </div>
+          </div>
+
+          <!-- Links do menu -->
+          <ul class="navbar-nav flex-column align-items-center">
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../index.html">Início</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../html/catalogo.html">Catálogo</a>
+            </li>
+            <li class="nav-item dropdown mx-3">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMobile"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Pintores</a
+              >
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMobile">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../html/artistaLeonardoValencia.html"
+                    >Leonardo Valencia</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../html/artistaNubiaVillalobos.html"
+                    >Nubia Villalobos</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="../html/vitrine.html">Vitrine</a>
+            </li>
+          </ul>
+
+          <!-- Redes sociais no final do menu -->
+          <div class="d-flex justify-content-st my-3">
+            <a
+              href="https://www.instagram.com/moldurariacardinal?igsh=NnFqbDAzZ3IzOGNr"
+              target="_blank"
+            >
+              <img
+                src="../assets/instagramIcone.jpg"
+                alt="Instagram"
+                class="icone-nav"
+              />
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091002034014&ref=xav_ig_profile_web"
+              target="_blank"
+            >
+              <img
+                src="../assets/facebookIcone.jpg"
+                alt="Facebook"
+                class="icone-nav"
+              />
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=558171181482&text&type=phone_number&app_absent=0"
+              target="_blank"
+            >
+              <img
+                src="../assets/whatsappIcone.jpg"
+                alt="Whatsapp"
+                class="icone-nav"
+              />
+            </a>
+          </div>
+        </div>
       </div>
     </nav>
 

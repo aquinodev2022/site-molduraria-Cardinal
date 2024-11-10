@@ -1,6 +1,13 @@
-/* Menu de navegação superior */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .navbar {
-  margin: 60px 0 15px 0}
+  margin: 30px 0;
+}
 
 .navbar-nav .nav-link {
   font-weight: bold;
@@ -8,49 +15,64 @@
   color: #333;
 }
 
-.navbar-nav .nav-link {
-  position: relative;
-  color: #000;
-}
-
-.navbar-nav .nav-link.active::after {
-  content: "";
-  position: absolute;
-  bottom: 2px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 8px;
-  background-color: #f00e0e;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-
 .icone-nav {
   height: 40px;
-  margin-right: 35px;
+  margin-right:40px;
 }
+
 
 .card-linha-logo {
-  margin: 30px 0;
-  position: relative;
+ width: 1320px;
+ margin-top: -30px;
 }
 
-.card-linha-logo a {
-  position: absolute;
-}
+.card-linha-logo .logo-nav {
+  margin: 0px 0 17px 15px;}
 
 .card-linha-logo img {
   height: 150px;
 }
 
-.linha-nav-esquerda {
-  width: 31%;
-  margin-right: 160px;
+.linha-nav-esquerda,
+.linha-nav-direita {
+  width: 50%;  
+  border-top: 2px solid #333;
+  margin: 0;
 }
 
-.linha-nav-direita {
-  width: 31%;
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url('https://img.icons8.com/ios-filled/50/000000/menu.png');
+}
+
+@media (max-width: 992px) {
+  .navbar.d-lg-flex {
+    display: none !important;
+  }
+
+.card-linha-logo {
+ width: 310px;
+}
+
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  .card-linha-logo {
+    margin-top: 20px;
+  }
+
+  .linha-nav-esquerda,
+  .linha-nav-direita {
+    width: 40%;
+  }
+
+  .logo-nav {
+    height: 80px;
+  }
 }
 
 /* Carrosel superior com  3 imagens em slide */
@@ -87,6 +109,28 @@
 
 .carousel-control-next-icon {
   margin-left: 100px;
+}
+
+@media (max-width: 576px) {
+  .carousel-inner {
+    height: 250px; 
+  }
+  .carousel-inner img {
+    height: 300px;
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 35px; 
+    height: 35px;
+  }
+
+  .carousel-control-prev-icon {
+    margin-right: 15px;
+  }
+
+  .carousel-control-next-icon {
+    margin-left: 15px;
+  }
 }
 
 /* Botão WhatsAap */
@@ -130,11 +174,17 @@
   padding: 40px 0;
 }
 
+.services-section > div {
+  display: flex;
+  justify-content: center;
+}
+
 .card-title {
   margin-bottom: 15px;
   height: 40px;
   overflow: hidden;
   white-space: nowrap;
+  font-weight: bold;
 }
 
 .card-servicos {
@@ -150,6 +200,34 @@
   width: 80px;
 }
 
+@media (max-width: 768px) {
+  .card-servicos {
+    min-width: 240px;
+    margin: 10px;
+    height: 270px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: flex-start; 
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; 
+  }
+
+  .services-section > div {
+    display: flex;
+    justify-content: start;
+  }
+
+  .col-md-2 {
+    flex: 0 0 auto;
+  }
+
+  .services-section {
+    padding: 30px 0 20px 0;
+  }
+}
+
 .card-img-top {
   object-fit: cover;
   height: 300px;
@@ -158,6 +236,36 @@
 .card-historia p {
   font-family: "Inder, arial";
 }
+
+@media (max-width: 768px) {
+  .row.d-flex {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow-x: auto; 
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .col-4 {
+    flex: 0 0 auto; 
+    margin-right: 10px; 
+  }
+
+  .card-item {
+    width: 250px; 
+    height: 300px;
+  }
+
+  .card-img-top {
+    object-fit: cover; 
+    width: 100%; 
+    height: 100%; 
+  }
+
+  .card-novos-itens {
+    margin-left: 0 !important;
+  }
+}
+
 
 /* Vantagens da consultoria */
 
@@ -177,6 +285,44 @@
 .card-vantagens-consultoria h3 {
   color: black;
 }
+
+@media (max-width: 768px) {
+  .card-consultoria-imagem {
+    height: 350px; 
+  }
+
+  .card-vantagens-consultoria {
+    width: 60%; 
+    padding: 15px; 
+    height: 270px;
+    margin-left: 20px !important;
+  }
+
+  .card-vantagens-consultoria h3 {
+    font-size: 1.5rem !important; 
+  }
+
+  .card-text {
+    font-size: 0.9rem !important; 
+  }
+  
+}
+
+@media (max-width: 767px) {
+  .historia-titulo {
+    font-size: 2rem; 
+  }
+
+  .historia-texto {
+    font-size: 1rem;
+  }
+
+  .historia-imagem {
+    width: 100%; 
+    height: auto; 
+  }
+}
+
 
 /* Localização - página inicial */
 .mapaIframe {
